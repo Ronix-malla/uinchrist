@@ -86,24 +86,33 @@ body {
   transition: 0.2s ease-in-out;
 }
 .card1 .englishbackground {
-  width: 21.5rem;
-  height: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22.5rem;
+  height: 9.43rem;
   background-image: url(LanguageSectionImg/englishbackground.png);
   background-size: cover;
   background-position: center;
 }
 
 .card1 .nepalibackground {
-  width: 21.5rem;
-  height: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22.5rem;
+  height: 9.43rem;
   background-image: url(LanguageSectionImg/Nepalbackground.png);
   background-size: cover;
   background-position: center;
 }
 
 .card1 .hindibackground {
-  width: 21.5rem;
-  height: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22.5rem;
+  height: 9.43rem;
   background-image: url(LanguageSectionImg/hindibackground.png);
   background-size: cover;
   background-position: center;
@@ -124,20 +133,20 @@ p {
   line-height: 3rem;
 }
 
-.englishbackground img,
+/* .englishbackground img,
 .nepalibackground img,
 .hindibackground img {
   margin-top: 0.2rem;
-}
+} */
 
 .imageicon {
   position: absolute;
   top: 0rem;
-  right: 1rem;
+  right: 0.2rem;
 }
 
 .image1 {
-  height: 11rem;
+  height: 9.43rem;
   width: 13.5rem;
 }
 
