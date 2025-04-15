@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../ASSETS/categoryimg/herosectionbackground.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .overlay {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero h1 {
+  font-family: "domine";
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+
+main h1 {
+  font-family: "domine", sans-serif;
+  font-size: 2.25rem;
+}
+
+/* listing section */
+.language {
+  font-family: "Outfit", sans-serif;
+  background-color: #aa1f23;
+  height: 3.75rem;
+}
+
+.card .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hymncard {
+  background-image: url(../ASSETS/categoryimg/hymnbackground2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.subtitle {
+  font-family: "domine", sans-serif;
+}
+.card-title {
+  font-family: "domine", sans-serif;
+  font-size: 1.5rem;
+}
+
+.lyricsimg {
+  width: 1.5rem;
+}
+.card-body {
+  height: 3.75rem;
+}
+
+.card-body p {
+  left: 40%;
+  bottom: 0.5rem;
+}
+
+/* dropdown styling  */
+.dropdownicon {
+  height: 2rem;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+  min-width: 180px;
+  margin-top: 0.5rem !important;
+  z-index: 1060;
+  margin-top: 0.125rem !important;
+}
+
+.dropdown-item {
+  color: #333;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa;
+  color: #aa1f23;
+}
+
+.dropdown-item:active {
+  background-color: #e9ecef;
+}
+
+.dropdown-toggle:hover .dropdownicon {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.dropdownicon {
+  transition: all 0.2s ease;
+}
+
+/* searchbar  */
+.search-input {
+  border-radius: 50px !important;
+  padding: 15px 25px !important;
+  border: 2px solid #dee2e6 !important;
+  font-size: 18px !important;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.1) !important;
+  border-color: #aa1f23 !important;
+  border-width: 3px !important;
+  outline: none !important;
+}
+
+.search-input::placeholder {
+  font-family: "domine", sans-serif;
+  font-weight: bold;
+}
+.search-icon {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.playlistsection p {
+  font-size: 1.875rem;
+  font-family: "outfit";
+}
+
+.titlesection p {
+  font-family: "outfit";
+  font-size: 1.625rem;
+}
+
+/* music detail section */
+.music-img {
+  height: 74px;
+  width: 74px;
+}
+.music-title {
+  font-size: 1.56rem;
+}
+.music-description {
+  font-size: 1.25rem;
+}

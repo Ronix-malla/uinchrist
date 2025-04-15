@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure HTML/CSS Dropdown Menu</title>
+    <style>
+      .dropdownicon {
+        width: 1.5rem;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-trigger {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+      }
+
+      .dropdown-trigger:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        right: 0;
+        margin-top: 4px;
+        width: 160px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s;
+      }
+
+      .dropdown:focus-within .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 8px 16px;
+        border: none;
+        background: none;
+        text-align: left;
+        font-size: 14px;
+        color: rgb(55, 65, 81);
+        cursor: pointer;
+      }
+
+      .dropdown-item:hover {
+        background-color: rgb(249, 250, 251);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdown-trigger" aria-label="Menu">
+        <img
+          src="ASSETS/musiclistimg/sorticon.png"
+          alt=""
+          class="dropdownicon"
+        />
+      </button>
+      <div class="dropdown-menu">
+        <button class="dropdown-item">By Alphabet</button>
+        <button class="dropdown-item">Recent View</button>
+      </div>
+    </div>
+
+    <hr style="margin: 8px 0; border: 0; border-top: 1px solid #ddd" />
+  </body>
+</html>
