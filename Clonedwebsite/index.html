@@ -26,9 +26,9 @@
   <body>
     <!-- top bar -->
     <div class="top-bar-container">
-      <div class="container ps-5 pe-5">
+      <div class="container">
         <div class="row h-100 justify-content-center">
-          <div class="col-6 d-flex align-items-center">
+          <div class="col-md-5 d-flex align-items-center p-0">
             <i class="top-bar-icon fa-solid fa-envelope text-white me-2"></i>
             <p class="top-bar-text text-white m-0 me-4">
               Email: infodeercreative@gmail.com
@@ -37,7 +37,7 @@
             <p class="top-bar-text text-white m-0">Call Us: +91 9876543210</p>
           </div>
 
-          <div class="col-6 d-flex align-items-center justify-content-end">
+          <div class="col-5 d-flex align-items-center justify-content-end">
             <i class="top-bar-icon fa-brands fa-facebook text-white me-4"></i>
             <i class="top-bar-icon fa-brands fa-twitter text-white me-4"></i>
             <i class="top-bar-icon fa-brands fa-pinterest text-white me-4"></i>
@@ -49,36 +49,36 @@
 
     <!-- main navbar -->
     <div class="header bg-white">
-      <div class="container ps-5 pe-5">
-        <div class="row h-100">
+      <div class="container p-0">
+        <div class="row h-100 justify-content-center">
           <div class="col-md-2 d-flex align-items-center">
             <img class="logo" src="assets/weblogo.webp" alt="logo" />
             <h1 class="church-name ms-2 mb-0">MIMOSAN</h1>
           </div>
           <div
-            class="col-md-10 d-flex align-items-center justify-content-end p-0"
+            class="col-md-8 d-flex align-items-center justify-content-end p-0"
           >
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link me-2" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ms-4 me-2" href="#">ABOUT</a>
+                <a class="nav-link ms-3 me-2" href="#">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ms-4 me-2" href="#">SERMONS</a>
+                <a class="nav-link ms-3 me-2" href="#">SERMONS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ms-4 me-2" href="#">EVENTS</a>
+                <a class="nav-link ms-3 me-2" href="#">EVENTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ms-4 me-2" href="#">BLOG</a>
+                <a class="nav-link ms-3 me-2" href="#">BLOG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ms-4 me-2" href="#">CONTACT</a>
+                <a class="nav-link ms-3 me-2" href="#">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ms-4" href="#"
+                <a class="nav-link ms-3" href="#"
                   ><i class="fa-solid fa-magnifying-glass"></i
                 ></a>
               </li>
@@ -93,35 +93,41 @@
       <!-- hero section -->
       <div class="hero-section container">
         <div
-          class="row main-title justify-content-center align-items-center ps-5 pe-5"
+          class="row main-title justify-content-center align-items-center p-0"
         >
-          <h1 class="hero-title text-center">
-            BELIEF IN GOD AS FATHER AND HOLY SPIRIT IS AT THE HEART OF OUR FAITH
-          </h1>
+          <div class="col-md-10 p-0">
+            <h1 class="hero-title text-center">
+              BELIEF IN GOD AS FATHER AND HOLY SPIRIT IS AT THE HEART OF OUR
+              FAITH
+            </h1>
 
-          <h2 class="hero-description text-center">
-            God has revealed himself through the Bible, God has revealed himself
-            most clearly through the gift of his Son, Jesus Christ. God makes
-            himself known personally to each believer through the work of the
-            Holy Spirit.
-          </h2>
+            <h2 class="hero-description text-center">
+              God has revealed himself through the Bible, God has revealed
+              himself most clearly through the gift of his Son, Jesus Christ.
+              God makes himself known personally to each believer through the
+              work of the Holy Spirit.
+            </h2>
 
-          <button class="button hero-button">JOIN WITH US</button>
+            <div class="text-center">
+              <button class="button hero-button">JOIN WITH US</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- event section -->
     <section class="event">
-      <div class="container ps-5 pe-5 justify-content-center">
-        <div class="row">
-          <div class="col-md-1 ps-0 align-self-center">
+      <div class="container p-0">
+        <div class="row justify-content-center d-flex align-items-center">
+          <div class="col-md-1 ps-0">
             <div class="event-date text-center text-white">
               <p class="event-day m-0">18</p>
               <p class="event-month m-0">MAR</p>
             </div>
           </div>
 
-          <div class="event-detail col-md-6 align-self-center ps-5">
+          <div class="event-detail col-md-5 ps-5">
             <h3 class="mb-2">
               UPCOMING EVENT: <a>EXPLORING THE CHRISTIAN FAITH</a>
             </h3>
@@ -134,7 +140,9 @@
             </p>
           </div>
 
-          <div class="col-md-5 justify-content-end p-0 align-items-center mb-5">
+          <div
+            class="col-md-4 d-flex justify-content-end align-items-center p-0"
+          >
             <div class="countdown-container mt-3">
               <div class="time-block">
                 <div class="number">2</div>
@@ -161,17 +169,18 @@
       </div>
     </section>
 
-    <section class="about mt-2">
-      <div class="container ps-5 pe-5">
+    <!-- about section -->
+    <section class="about mt-1">
+      <div class="container p-0">
         <h1 class="main-heading text-center">WELCOME TO OUR CHURCH</h1>
-        <p class="sub-heading text-center">
+        <p class="sub-heading text-center mb-5">
           It's the start of an amazing journey of faith
         </p>
-        <div class="row">
-          <div class="about_img col-md-6">
+        <div class="row justify-content-center">
+          <div class="about_img col-md-5">
             <img src="assets/aboutsecimg.webp" alt="aboutus" />
           </div>
-          <div class="about_text col-md-6">
+          <div class="about_text col-md-5">
             <p class="m-0 text-start">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
               similique, iste blanditiis cupiditate dignissimos assumenda unde
@@ -182,14 +191,287 @@
               voluptates debitis, cupiditate corrupti sint repellendus quibusdam
               enim vel atque itaque reiciendis voluptatum alias officia. Vitae
               debitis magnam deleniti! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Error unde reiciendis qui, odit maiores esse ad
-              omnis adipisci doloremque cumque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Suscipit, aperiam!
+              adipisicing elit. Error unde reiciendis qui,
             </p>
-            <button class="button">READ STORY</button>
+            <button class="button about-btn">READ STORY</button>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- sermons section -->
+    <section class="sermons">
+      <div class="container p-0">
+        <h1 class="main-heading text-center">OUR SERMONS</h1>
+        <p class="sub-heading text-center mb-5">
+          It's the start of an amazing journey of faith
+        </p>
+
+        <div
+          class="sermon-row row justify-content-center text-center flex-wrap"
+        >
+          <!-- first card -->
+          <div class="sermon-card card border-0 mb-4">
+            <div class="card-img">
+              <img src="assets/sermon_1.jpg.webp" alt="sermon1" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#"
+                  >sermons on prayer: running well, finishing strong</a
+                >
+              </h5>
+              <p class="m-0">Paster: <a href="#">Josh Brighton</a></p>
+              <p>Category: <a href="#">God, Prayer</a></p>
+
+              <div class="sermon-link">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-solid fa-file-pdf"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-download"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- second card -->
+          <div class="sermon-card card border-0">
+            <div class="card-img">
+              <img src="assets/sermon_2.jpg.webp" alt="sermon1" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#"
+                  >sermons on faith: a life worth living, a new purpose</a
+                >
+              </h5>
+              <p class="m-0">Paster: <a href="#">Julia Amber</a></p>
+              <p>Category: <a href="#">God, Faith</a></p>
+
+              <div class="sermon-link">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-solid fa-file-pdf"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-download"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- third card -->
+          <div class="sermon-card card border-0">
+            <div class="card-img">
+              <img src="assets/sermon_3.jpg.webp" alt="sermon1" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#"
+                  >sermons for communion services: come to the table:
+                </a>
+              </h5>
+              <p class="m-0">Paster: <a href="#">Ashley Young</a></p>
+              <p>Category: <a href="#">God, Communion</a></p>
+
+              <div class="sermon-link">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-solid fa-file-pdf"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-download"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission section -->
+    <section class="mission">
+      <div
+        class="mission-row row justify-content-center text-center align-items-center"
+      >
+        <div class="col-md-3 mission-item">
+          <i class="mission-icon fa-regular fa-bell"></i>
+          <h1 class="text-white">our mission</h1>
+          <p class="text-white">
+            Lorem ipsum dolor amet, consectet adipiscing doelit. Sed a mauri
+            suscipita utrum arcu , gravida nisl. Interdum mante ipsum.
+          </p>
+          <div class="vertical-divider"></div>
+        </div>
+        <div class="col-md-3 mission-item">
+          <i class="mission-icon fa-regular fa-flag"></i>
+          <h1 class="text-white">our communtity</h1>
+          <p class="text-white">
+            Lorem ipsum dolor amet, consectet adipiscing doelit. Sed a mauri
+            suscipita utrum arcu , gravida nisl. Interdum mante ipsum.
+          </p>
+          <div class="vertical-divider"></div>
+        </div>
+        <div class="col-md-3 mission-item">
+          <i class="mission-icon fa-regular fa-heart"></i>
+          <h1 class="text-white">our belief</h1>
+          <p class="text-white">
+            Lorem ipsum dolor amet, consectet adipiscing doelit. Sed a mauri
+            suscipita utrum arcu , gravida nisl. Interdum mante ipsum.
+          </p>
+          <div class="vertical-divider"></div>
+        </div>
+        <div class="col-md-3 mission-item">
+          <i class="mission-icon fa-regular fa-moon"></i>
+          <h1 class="text-white">our faith</h1>
+          <p class="text-white">
+            Lorem ipsum dolor amet, consectet adipiscing doelit. Sed a mauri
+            suscipita utrum arcu , gravida nisl. Interdum mante ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- upcoming events section -->
+    <section class="upcoming-events">
+      <div class="container p-0">
+        <h1 class="main-heading text-center">UPCOMING EVENTS</h1>
+        <p class="sub-heading text-center mb-5">Experience God's Presence</p>
+      </div>
+      <div class="row d-flex justify-content-evenly">
+        <!-- first card -->
+        <div class="event-card card border-0 p-0">
+          <div class="card-img">
+            <img src="assets/event_1.jpg.webp" alt="event1" />
+          </div>
+          <div class="event-card-body card-body d-flex">
+            <div class="d-inline-block">
+              <div class="event-date text-center text-white">
+                <p class="event-day m-0">18</p>
+                <p class="event-month m-0">MAR</p>
+              </div>
+            </div>
+            <div class="event-detail">
+              <h3 class="mb-3">
+                <a>EXPLORING THE CHRISTIAN FAITH</a>
+              </h3>
+              <p class="mb-3">
+                <i class="fa-solid fa-calendar"></i>08: 00 AM- 11:00
+              </p>
+              <p class="m-0">
+                <i class="fa-solid fa-location-dot"></i>1195 Lobortis Rd, New
+                Orleans, Ne Hampshire
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- second card -->
+        <div class="event-card card border-0 p-0">
+          <div class="card-img">
+            <img src="assets/event_2.jpg.webp" alt="event1" />
+          </div>
+          <div class="event-card-body card-body d-flex">
+            <div class="d-inline-block">
+              <div class="event-date text-center text-white">
+                <p class="event-day m-0">18</p>
+                <p class="event-month m-0">MAR</p>
+              </div>
+            </div>
+            <div class="event-detail">
+              <h3 class="mb-3">
+                <a>TO LOVE AND TO CHRISH, THE WEDDING</a>
+              </h3>
+              <p class="mb-3">
+                <i class="fa-solid fa-calendar"></i>08: 00 AM- 11:00
+              </p>
+              <p class="m-0">
+                <i class="fa-solid fa-location-dot"></i>1195 Lobortis Rd, New
+                Orleans, Ne Hampshire
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- third card -->
+        <div class="event-card card border-0 p-0">
+          <div class="card-img">
+            <img src="assets/event_3.jpg.webp" alt="event1" />
+          </div>
+          <div class="event-card-body card-body d-flex">
+            <div class="d-inline-block">
+              <div class="event-date text-center text-white">
+                <p class="event-day m-0">18</p>
+                <p class="event-month m-0">MAR</p>
+              </div>
+            </div>
+            <div class="event-detail">
+              <h3 class="mb-3">
+                <a>THE CHRISTAIN COMMUNITY IN AMERICA</a>
+              </h3>
+              <p class="mb-3">
+                <i class="fa-solid fa-calendar"></i>08: 00 AM- 11:00
+              </p>
+              <p class="m-0">
+                <i class="fa-solid fa-location-dot"></i>1195 Lobortis Rd, New
+                Orleans, Ne Hampshire
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- donation section -->
+    <section class="donation">
+      <div class="container p-0">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 donation-box text-white">
+            <h1 class="donation-heading">HELP CHILDREN GET AN EDUCATION</h1>
+          <p class="donation-text">Donation Caller: <a href="#">+91 9876543210</a></p>
+          <p class="donation-text">Categories: <a href="#">Education, Children</a></p>
+          <p class="donation-text">On: <a href="#">Friday 16 MAR, 2018</a></p>
+          <p class="donation-description">
+            Mauris eleifend dolor ante, at fringilla magna dignissim et.
+            Maecenas imperdiet quam quis erat molestie facilisis. Ut in
+            condimentum ipsum. Aenean ac congue turpis. Nunc luctus ligula
+            tellus, in pellentesque leo ullamcorper in.
+          </p>
+        </div>
+        <div class="donation-container col-md-4 bg-white">
+          <h4 class="text-start mb-3">Remaining: <p>$2,100</p></h4>
+          <p class="progress-percentage">70%</p>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="donation-stats">
+              <div>Raised: <span>$5,000</span></div>
+              <div>Goal: <span>$7,100</span></div>
+          </div>
+          <button class="donate-btn ">DONATE NOW</button>
+      </div>
+        </div>
+    </section>
+
+    <!-- quote section -->
+    <section class="quote">
+      <div class="container p-0">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-10 text-center">
+            <img src="assets/quote.png.webp" class="quote-logo" alt="">
+            <h1>“Wherever the bishop appears, there let the people be, even as wheresoever Christ Jesus is, there is the catholic church.”</h1>
+            <p>Ignatius of Antioch</p>
+            </div>
+          </div>
+        </div>
+    
+    </section>
+
+    <!-- gallery section -->
+    <section class="gallery d-flex flex-wrap p-0 m-0">
+      <img src="assets/gallery_1.jpg.webp" alt="">
+      <img src="assets/gallery_2.jpg.webp" alt="">
+      <img src="assets/gallery_3.jpg.webp" alt="">
+      <img src="assets/gallery_4.jpg.webp" alt="">
+      <img src="assets/gallery_5.jpg.webp" alt="">
+      <img src="assets/gallery_6.jpg.webp" alt="">
+      <img src="assets/gallery_7.jpg.webp" alt="">
+      <img src="assets/gallery_8.jpg.webp" alt="">
+      <img src="assets/gallery_9.jpg.webp" alt="">
+      <img src="assets/gallery_10.jpg.webp" alt="">
     </section>
   </body>
 </html>

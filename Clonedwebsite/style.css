@@ -14,7 +14,10 @@
   box-sizing: border-box;
   font-family: var(--primary-font);
 }
-
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
 /* top bar */
 .home-container {
   position: relative;
@@ -87,7 +90,7 @@
 
   font-size: 1rem;
   color: var(--font-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 .nav .nav-item .nav-link:hover {
   color: var(--primary-color) !important;
@@ -104,8 +107,8 @@
   width: 100%;
 }
 .hero-title {
-  margin-top: 3rem;
-  font-size: 3.4375rem;
+  margin-top: 8rem;
+  font-size: 3.29rem;
   font-weight: 800;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -116,9 +119,9 @@
   font-size: 1.125rem;
 
   color: var(--secondary-color);
-  margin-top: 1.68rem;
-  padding: 0 4.375rem;
-  letter-spacing: 0.03em;
+  margin-top: 1.5rem;
+  padding: 0 4.18rem;
+  letter-spacing: 0.02em;
   line-height: 1.45;
 }
 .button {
@@ -141,18 +144,20 @@
 }
 
 .event .container .row {
-  padding: 30px 35px 30px 70px;
+  width: 85%;
+  padding: 30px 0px 30px 0px;
   background-color: #f9f9f9;
   border-radius: 0.4rem;
   position: relative;
   top: -5rem;
   height: 10rem;
+  margin: 0 auto;
 }
 
 .event-date {
   background-color: var(--primary-color);
-  height: 4.375rem;
-  width: 4.375rem;
+  height: 70px;
+  width: 70px;
   padding: 0.625rem;
 }
 .event-day {
@@ -220,34 +225,362 @@
 }
 
 /* about section */
-.main-heading {
-  font-size: var(--main-heading-size);
-  font-weight: 700;
-  color: #181818;
+.about {
+  margin-bottom: 6.5rem;
 }
-
-.sub-heading {
-  font-family: var(--secondary-font) !important;
-  font-size: 1rem;
-  font-style: italic;
-  color: #7c7c7c;
-  margin-top: 0.4rem;
-  letter-spacing: 0.03em;
-}
-
 .about_img {
-  width: 34.6875rem;
-  height: 22.52rem;
-  padding-right: 15px;
-  padding-left: 0;
+  height: 360px;
+  width: 555px;
 }
 .about_img img {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .about_text {
+  padding: 11px 0 0 40px;
+}
+.about_text p {
   font-family: var(--secondary-font);
   font-size: 1rem;
   line-height: 1.75;
   color: #7c7c7c;
-  padding: 11px 0 0 30px;
+  font-weight: 400;
+}
+.about-btn {
+  position: relative;
+  bottom: -0.9rem;
+}
+.main-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.185;
+  color: var(--font-color);
+}
+.sub-heading {
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7c7c7c;
+  margin-top: 0.3125rem;
+}
+
+/* sermons section */
+.sermon-row {
+  padding-bottom: 6.4rem;
+}
+.sermons {
+  padding-top: 6.4rem;
+  background-color: #f7f7f7;
+}
+.card-img {
+  height: 262.65px;
+  width: 360px;
+}
+.card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.sermon-card {
+  padding: 0;
+  height: 531px;
+  width: 360px;
+  margin-right: 30px;
+}
+.card-body {
+  padding: 44px 20px 50px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.sermon-card .card-title a {
+  font-size: 1.125rem;
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.sermon-card .card-title a:hover {
+  color: var(--primary-color);
+}
+.sermon-card .card-body p {
+  font-family: var(--secondary-font);
+  font-size: 0.8125rem;
+  color: #7c7c7c;
+  font-style: italic;
+}
+.sermon-card .card-body p a {
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+}
+
+.sermon-link {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sermon-link i {
+  background-color: #eaeaea;
+  color: #6b6b6b;
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.sermon-link i:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* mission section */
+.mission {
+  position: relative;
+  background-image: url(assets/mission.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 6.4rem;
+  position: relative;
+  z-index: 0;
+}
+.mission-row {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 1;
+}
+.mission-icon {
+  font-size: 2.25rem;
+  color: var(--primary-color);
+  font-weight: lighter;
+}
+.mission-item {
+  padding: 0 4.35rem;
+}
+.mission-item h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+.mission-item p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+/* .vertical-divider {
+  width: 1px;
+  background-color: white;
+  height: 2rem;
+  margin: 0 15px;
+  display: inline-block;
+} */
+
+/* upcoming event section */
+.upcoming-events {
+  padding-bottom: 6.4rem;
+}
+.event-card {
+  width: 406.93px;
+  /* margin-left: 75px; */
+}
+.event-card .card-img {
+  height: 223.93px;
+  width: 100%;
+  object-fit: cover;
+}
+.event-card-body {
+  padding: 1rem 0 1rem 0;
+}
+.event-card-body .event-detail {
+  padding-left: 1.875rem;
+}
+
+/* donation section */
+.donation {
+  position: relative;
+  background-image: url(assets/donation.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  position: relative;
+  z-index: 0;
+}
+.donation .container {
+  position: relative;
+  z-index: 1;
+}
+.donation-heading {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+/* .donation-box {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+} */
+.donation-text {
+  font-family: var(--secondary-font);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #c0c0c0;
+}
+.donation-text a {
+  font-family: var(--secondary-font);
+  color: white;
+}
+.donation-text a:hover {
+  color: var(--primary-color);
+}
+.donation-description {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+  font-style: normal;
+}
+.donation-container {
+  height: 340px;
+  width: 415px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 20px;
+  margin-left: 5rem;
+  margin-right: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 40px 30px 40px 30px;
+}
+
+.donation-container h4 {
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #181818;
+}
+
+.donation-container p {
+  display: inline;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #181818;
+  margin-left: 10px;
+  font-style: normal;
+}
+.progress-percentage {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #181818 !important;
+  line-height: 0.75 !important;
+  position: relative;
+  top: 0.5rem;
+  left: 4rem;
+}
+.progress {
+  height: 14px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.donation-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+}
+
+.donation-stats span {
+  font-weight: bold;
+}
+
+.donate-btn {
+  position: relative;
+  bottom: -2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* quote section */
+.quote {
+  padding-bottom: 134px;
+  background-image: url(assets/web-quote.jpg.webp);
+  background-size: cover;
+}
+.quote-logo {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 10rem;
+  z-index: 0;
+}
+.quote h1 {
+  font-family: var(--secondary-font);
+  font-size: 2.2rem;
+  color: #181818;
+  line-height: 1.4;
+  font-style: italic;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.quote p {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* gallery section */
+.gallery img {
+  height: 274.78px;
+  width: 20%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .gallery img {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery img {
+    width: 100%;
+  }
 }
