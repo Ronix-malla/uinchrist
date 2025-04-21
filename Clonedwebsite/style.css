@@ -53,7 +53,7 @@ a {
 }
 .top-bar-icon,
 .top-bar-text {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .top-bar-icon {
@@ -88,12 +88,15 @@ a {
 .nav .nav-item .nav-link {
   text-decoration: none;
 
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: var(--font-color);
   font-weight: 600;
 }
 .nav .nav-item .nav-link:hover {
   color: var(--primary-color) !important;
+}
+.hamburger {
+  display: none;
 }
 
 /* hero section */
@@ -455,8 +458,7 @@ a {
 }
 .donation-container {
   height: 340px;
-  width: 415px;
-  margin-top: 6rem;
+  margin-top: 6rem !important;
   margin-bottom: 6rem;
   padding: 20px;
   margin-left: 5rem;
@@ -567,9 +569,243 @@ a {
   object-fit: cover;
 }
 
+/* news section */
+.news-card {
+  padding: 0 15px;
+}
+
+.news {
+  padding: 6.0625rem 0 3.375rem 0;
+}
+
+.news .card-img {
+  width: 100%;
+  object-fit: cover;
+}
+.news .card-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: var(--font-color);
+  line-height: 1.33;
+  transition: color 0.3s ease;
+}
+.news .card-title:hover {
+  color: var(--primary-color);
+}
+
+.news-detail p {
+  margin-right: 1.125rem;
+  cursor: pointer;
+}
+.news-detail p:hover {
+  color: var(--primary-color);
+}
+.news-text {
+  font-size: 0.875rem;
+  color: #7c7c7c;
+  line-height: 1.75;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* footer section */
+.footer {
+  position: relative;
+  background-image: url(assets/footer.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+.footer .navbar-info {
+  position: relative;
+  z-index: 1;
+  padding-top: 3.375rem;
+}
+.navbar-info h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+  line-height: 0.75;
+  vertical-align: middle;
+  margin-top: 0.9rem;
+  margin-left: 0.4rem;
+}
+
+.navbar-info p {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-style: normal;
+  line-height: 1.75;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+.navbar-info p i {
+  margin-right: 0.5rem;
+}
+
+.useful-title,
+.subscribe-title {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 0.75;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.useful-links {
+  display: flex;
+  gap: 30px;
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+}
+
+.useful-links li {
+  margin-bottom: 0.6875rem;
+  margin-right: 0.6875rem;
+}
+
+.useful-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+.useful-links a i {
+  color: var(--primary-color);
+  margin-right: 8px;
+}
+
+.useful-links a:hover {
+  color: var(--primary-color);
+}
+
+.subscribe-info,
+.useful-info {
+  margin-left: 9rem;
+}
+
+.subscribe-info p {
+  margin-top: 2.2rem;
+  margin-bottom: 2.1rem;
+  line-height: 1.71;
+  font-size: 0.875rem;
+}
+.subscribe-box {
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 1rem;
+}
+
+.email-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  opacity: 0.5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 0;
+  box-shadow: none;
+  border: white;
+}
+
+.email-input::placeholder {
+  color: white;
+}
+
+.subscribe-btn {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+.footer-bottom {
+  font-size: 14px;
+  color: #a5a5a5;
+  margin: 1rem 0;
+}
+@media (max-width: 1200px) {
+  /* navbar */
+  .header {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--font-color);
+    margin-left: auto;
+  }
+
+  .col-md-8 {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100%;
+  }
+
+  .col-md-2 {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .church-name {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 992px) {
   .gallery img {
     width: 33.33%;
+  }
+  .donation-container {
+    margin-top: 2rem !important;
+  }
+  .donation-box {
+    margin-top: 4rem !important;
+  }
+  .subscribe-info,
+  .useful-info {
+    margin-left: 0;
   }
 }
 
@@ -577,10 +813,55 @@ a {
   .gallery img {
     width: 50%;
   }
+  .countdown-col {
+    margin-top: 2rem !important;
+  }
+  .hero-title {
+    font-size: 36px !important;
+  }
+  .hero-description {
+    font-size: 16px !important;
+  }
+  .main-heading {
+    font-size: 24px !important;
+  }
+  .sub-heading {
+    font-size: 14px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .quote h1 {
+    font-size: 24px !important;
+  }
 }
 
 @media (max-width: 576px) {
   .gallery img {
     width: 100%;
+  }
+  .donation-container {
+    margin-left: 2rem !important;
+  }
+  .donation-box {
+    margin-top: 1rem !important;
+  }
+  .hero-title {
+    font-size: 36px !important;
+  }
+  .hero-description {
+    font-size: 16px !important;
+  }
+  .main-heading {
+    font-size: 24px !important;
+  }
+  .sub-heading {
+    font-size: 14px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .quote h1 {
+    font-size: 24px !important;
   }
 }
