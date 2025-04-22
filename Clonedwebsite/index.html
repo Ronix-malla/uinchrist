@@ -48,47 +48,59 @@
     </div>
 
     <!-- main navbar -->
-    <div class="header bg-white">
-      <div class="container p-0">
-        <div class="row h-100 justify-content-center">
-          <div class="col-md-2 d-flex align-items-center">
-            <img class="logo" src="assets/weblogo.webp" alt="logo" />
-            <p class="church-name ms-2 mb-0">MIMOSAN</p>
-            <i class="fa fa-bars hamburger" onclick="toggleNav()"></i>
-
-          </div>
-          <div
-            class="col-md-8 d-flex align-items-center justify-content-end p-0 "
-          >
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link me-2" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-3 me-2" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-3 me-2" href="#">SERMONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-3 me-2" href="#">EVENTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-3 me-2" href="#">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-3 me-2" href="#">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-3" href="#"
-                  ><i class="fa-solid fa-magnifying-glass"></i
-                ></a>
-              </li>
-            </ul>
+     <div class="search-wrapper position-relative">
+      <input type="checkbox" id="search-toggle" class="d-none"/>
+      <div class="header bg-white">
+        <div class="container p-0">
+          <div class="row h-100 justify-content-center">
+            <div class="col-md-2 d-flex align-items-center">
+              <img class="logo" src="assets/weblogo.webp" alt="logo" />
+              <p class="church-name ms-2 mb-0">MIMOSAN</p>
+              <i class="fa fa-bars hamburger" onclick="toggleNav()"></i>
+  
+            </div>
+            <div
+              class="col-md-8 d-flex align-items-center justify-content-end p-0 "
+            >
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link me-2" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-3 me-2" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-3 me-2" href="#">SERMONS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-3 me-2" href="#">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-3 me-2" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-3 me-2" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <label for="search-toggle" class="nav-link ms-3" style="cursor: pointer;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </label>
+                  
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      
+      <div class="search-input ">
+        <div class="container d-flex justify-content-end align-items-center">
+              <input type="text" placeholder="Search..." class="form-control d-block " />
+            
+        </div>
+      </div>
+     </div>
+    
     
     
 
@@ -174,9 +186,9 @@
     </section>
 
     <!-- about section -->
-    <section class="about mt-1">
+    <section class="web_section about mt-1 p-0">
       <div class="container p-0">
-        <h1 class="main-heading text-center mt-5">WELCOME TO OUR CHURCH</h1>
+        <h1 class="main-heading text-center ">WELCOME TO OUR CHURCH</h1>
         <p class="sub-heading text-center mb-5">
           It's the start of an amazing journey of faith
         </p>
@@ -204,7 +216,7 @@
     </section>
 
     <!-- sermons section -->
-    <section class="sermons">
+    <section class="web_section sermons">
       <div class="container p-0">
         <h1 class="main-heading text-center">OUR SERMONS</h1>
         <p class="sub-heading text-center mb-5">
@@ -212,11 +224,11 @@
         </p>
 
         <div
-          class="sermon-row row justify-content-center text-center flex-wrap"
+          class="sermon-row row justify-content-center text-center "
         >
           <!-- first card -->
-          <div class="sermon-card card border-0 mb-4">
-            <div class="card-img col-sm-12">
+          <div class="sermon-card card border-0 mb-4 col-lg-3 col-md-6 col-sm-12">
+            <div class="card-img col-sm-12 ">
               <img src="assets/sermon_1.jpg.webp" alt="sermon1" />
             </div>
             <div class="card-body">
@@ -238,8 +250,8 @@
           </div>
 
           <!-- second card -->
-          <div class="sermon-card card border-0">
-            <div class="card-img col-sm-12">
+          <div class="sermon-card card border-0 mb-4 col-lg-3 col-md-6 col-sm-12">
+            <div class="card-img col-sm-12 ">
               <img src="assets/sermon_2.jpg.webp" alt="sermon1" />
             </div>
             <div class="card-body">
@@ -259,10 +271,9 @@
               </div>
             </div>
           </div>
-
           <!-- third card -->
-          <div class="sermon-card card border-0">
-            <div class="card-img col-sm-12">
+          <div class="sermon-card card border-0 mb-4 col-lg-3 col-md-6 col-sm-12">
+            <div class="card-img col-sm-12 ">
               <img src="assets/sermon_3.jpg.webp" alt="sermon1" />
             </div>
             <div class="card-body">
@@ -287,7 +298,7 @@
     </section>
 
     <!-- mission section -->
-    <section class="mission">
+    <section class=" mission">
       <div
         class="mission-row row justify-content-center text-center align-items-center"
       >
@@ -330,7 +341,7 @@
     </section>
 
     <!-- upcoming events section -->
-    <section class="upcoming-events">
+    <section class=" upcoming-events">
       <div class="container p-0">
         <h1 class="main-heading text-center">UPCOMING EVENTS</h1>
         <p class="sub-heading text-center mb-5">Experience God's Presence</p>
@@ -420,7 +431,7 @@
     </section>
 
     <!-- donation section -->
-    <section class="donation">
+    <section class=" donation">
       <div class="container p-0">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-5 col-md-10  donation-box text-white">
@@ -451,7 +462,7 @@
     </section>
 
     <!-- quote section -->
-    <section class="quote">
+    <section class=" quote">
       <div class="container p-0">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-10 text-center">
@@ -465,7 +476,7 @@
     </section>
 
     <!-- gallery section -->
-    <section class="gallery d-flex flex-wrap p-0 m-0">
+    <section class="web_section gallery d-flex flex-wrap p-0 m-0">
       <img src="assets/gallery_1.jpg.webp" alt="">
       <img src="assets/gallery_2.jpg.webp" alt="">
       <img src="assets/gallery_3.jpg.webp" alt="">
@@ -479,14 +490,14 @@
     </section>
 
     <!-- news section -->
-    <section class="news">
+    <section class="web_section news">
       <div class="container p-0">
         <h1 class="main-heading text-center">LATEST NEWS</h1>
         <p class="sub-heading text-center mb-5">Be part of a community of people experiencing God together</p>
       
       <div class="row justify-content-center">
         <!-- card 1 -->
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="news-card card rounded-0 border-0 mb-4">
             <div class="card-img ">
               <img src="assets/news_1.jpg.webp" alt="">
@@ -514,7 +525,7 @@
         </div>
 
         <!-- card 2 -->
-        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
           <div class="news-card  card rounded-0 border-0 mb-4">
             <div class="card-img ">
               <img src="assets/news_2.jpg.webp" alt="">
@@ -542,7 +553,7 @@
         </div>
 
         <!-- card 3 -->
-        <div class="col-sm-12 col-md-6 col-lg-4 ">
+          <div class="col-12 col-md-6 col-lg-4 ">
         <div class="news-card card rounded-0 border-0 mb-4">
           <div class="card-img ">
             <img src="assets/news_3.jpg.webp" alt="">
