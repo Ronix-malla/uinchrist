@@ -50,52 +50,58 @@
     <!-- main navbar -->
      <div class="search-wrapper position-relative">
       <input type="checkbox" id="search-toggle" class="d-none"/>
-      <div class="header bg-white">
-        <div class="container p-0">
-          <div class="row h-100 justify-content-center">
-            <div class="col-md-2 d-flex align-items-center">
-              <img class="logo" src="assets/weblogo.webp" alt="logo" />
-              <p class="church-name ms-2 mb-0">MIMOSAN</p>
-              <i class="fa fa-bars hamburger" onclick="toggleNav()"></i>
-  
-            </div>
-            <div
-              class="col-md-8 d-flex align-items-center justify-content-end p-0 "
-            >
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link me-2" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-3 me-2" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-3 me-2" href="#">SERMONS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-3 me-2" href="#">EVENTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-3 me-2" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-3 me-2" href="#">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                  <label for="search-toggle" class="nav-link ms-3" style="cursor: pointer;">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </label>
-                  
-                </li>
-              </ul>
+      <div class="header-wrapper">
+        <div class="header bg-white">
+          <div class="container p-0">
+            <div class="row h-100 justify-content-center">
+              <div class="col-md-2 d-flex align-items-center">
+                <img class="logo" src="assets/weblogo.webp" alt="logo" />
+                <p class="church-name ms-2 mb-0">MIMOSAN</p>
+                <i class="fa fa-bars hamburger" onclick="toggleNav()"></i>
+    
+              </div>
+              <div
+                class="col-md-8 d-flex align-items-center justify-content-end p-0 "
+              >
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link me-2 ms-md-3 ms-lg-0" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-3 me-2" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-3 me-2" href="#">SERMONS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-3 me-2" href="#">EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-3 me-2" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-3 me-2" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <label for="search-toggle" class="nav-link ms-3" style="cursor: pointer;">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      
+                    </label>                    
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
+     
+      <!-- search input -->
       <div class="search-input ">
         <div class="container d-flex justify-content-end align-items-center">
-              <input type="text" placeholder="Search..." class="form-control d-block " />
+              <input type="text" placeholder="Search..." class="form-control-1 form-control d-block " />
+              <label for="search-toggle" class="nav-link text-white " style="cursor: pointer;">
+                <i class="cross-icon fa-solid fa-xmark"></i>            
+              </label>
             
         </div>
       </div>
@@ -136,7 +142,7 @@
     <section class="event ">
       <div class="container p-0">
         <div class="row justify-content-center d-flex align-items-center">
-          <div class="col-1 col-md-2 ps-0 d-flex justify-content-center align-items-center">
+          <div class="col-1 col-md-1 ps-0 d-flex justify-content-center align-items-center">
             <div class="event-date text-center text-white">
               <p class="event-day m-0">18</p>
               <p class="event-month m-0">MAR</p>
@@ -656,6 +662,7 @@
     
 
       <script>
+        
         function toggleNav() {
           document.querySelector('.nav').classList.toggle('show');
         }
