@@ -82,7 +82,6 @@ a {
   z-index: 50;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: clip;
 }
 .logo {
   height: 3.75rem;
@@ -109,6 +108,7 @@ a {
 }
 .search-wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 /* .search-input {
@@ -129,10 +129,10 @@ a {
 */
 .search-input {
   position: absolute;
-  top: 100%;
   left: 0;
+  top: -120px;
   width: 100%;
-  height: 73px;
+  height: 120px;
   background-color: #a80000;
   display: flex;
   align-items: center;
@@ -144,9 +144,9 @@ a {
 }
 
 #search-toggle:checked ~ .search-input {
+  top: 0;
+  opacity: 1;
   pointer-events: auto;
-  top: 0%;
-  height: 120px;
 }
 .cross-icon {
   position: absolute;
@@ -176,11 +176,25 @@ a {
   transition: transform 0.5s ease-in-out;
 }
 #search-toggle:checked ~ .header-wrapper {
-  transform: translateY(-120px);
+  transform: translateY(120px);
+}
+/* search overlay */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 90;
 }
 
-.search-input {
-  top: 100%;
+#search-toggle:checked ~ .search-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* hero section */
