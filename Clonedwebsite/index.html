@@ -601,13 +601,14 @@
         </div>
       </div>
       </div>
-      <div class="top-button d-flex justify-content-end align-items-center me-5 pb-5">
-        <a href="#" class="top-button-link">
-          <i class=" fa-solid fa-arrow-up"></i>
-        </a>
-      </div>
+      
     </section>
 
+    <div class="top-button d-flex justify-content-end align-items-center me-5 pb-5">
+      <a href="#" class="top-button-link">
+        <i class=" fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
 
     <!-- footer section -->
     <footer >
@@ -676,6 +677,15 @@
         function toggleNav() {
           document.querySelector('.nav').classList.toggle('show');
         }
+
+        const topButton = document.querySelector('.top-button-link');
+        window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 200) {
+            topButton.classList.add('active');
+          } else {
+            topButton.classList.remove('active');
+          }
+        });
       </script>
       
   </body>
