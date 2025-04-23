@@ -82,6 +82,7 @@ a {
   z-index: 50;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: clip;
 }
 .logo {
   height: 3.75rem;
@@ -107,7 +108,7 @@ a {
   display: none;
 }
 .search-wrapper {
-  position: relative;
+  overflow: hidden;
 }
 
 /* .search-input {
@@ -136,14 +137,13 @@ a {
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   transition: all 0.5s ease-in-out;
   z-index: 100;
 }
 
 #search-toggle:checked ~ .search-input {
-  opacity: 1;
   pointer-events: auto;
   top: 0%;
   height: 120px;
