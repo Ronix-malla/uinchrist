@@ -80,7 +80,7 @@ header {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 1.125rem 0;
+  padding: 0.86rem 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .nav-item {
@@ -152,7 +152,7 @@ header {
   margin: 1.25rem 0;
 }
 .star-img {
-  transform: rotate(50deg) translate(40px, 20px);
+  transform: rotate(10deg) translate(20px, 40px);
   height: 60px;
   width: 60px;
   color: white;
@@ -176,9 +176,9 @@ header {
   align-items: center;
   justify-content: center;
 }
-.review-section i {
+/* .review-section i {
   color: var(--tertiary-color);
-}
+} */
 .review-section p {
   width: 55%;
   font-size: 1.125rem;
@@ -247,6 +247,7 @@ header {
 }
 
 .features {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -281,6 +282,14 @@ header {
   line-height: 1.9;
   width: 90%;
 }
+.vertical-line {
+  position: absolute;
+  background-color: #6255a5;
+  width: 1px;
+  height: 80%;
+  top: 2.2rem;
+  left: 48%;
+}
 
 /* courses section */
 .courses-heading {
@@ -309,7 +318,7 @@ header {
 }
 .courses-card {
   height: 346px;
-  width: 360px;
+  width: 403px;
   padding: 1.5rem;
   margin-bottom: 25px;
 }
@@ -498,7 +507,8 @@ header {
 
 /* subscribe section */
 .subscribe-section {
-  margin-bottom: 83px;
+  margin-bottom: 130px;
+  margin-top: 83px;
 }
 .subscribecard {
   position: relative;
@@ -638,5 +648,8 @@ header {
 @media (max-width: 576px) {
   .features {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .vertical-line {
+    display: none;
   }
 }
