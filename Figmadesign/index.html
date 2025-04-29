@@ -18,31 +18,52 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5 d-flex align-items-center">
-            <a class="navbar-brand" href="#"> LOGO8 </a>
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container">
+          
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">LOGO8</a>
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Collapsible section -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="#">Contact</a>
+              </li>
+    
+             
+              <li class="nav-item d-lg-none">
+                <button class="btn login-btn nav-btn w-100 mt-2">Login</button>
+              </li>
+            </ul>
           </div>
-
-          <div class="col-lg-4 d-flex justify-content-end align-items-center">
-            <div class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </div>
+    
+      
+          <div class="d-none d-lg-block">
+            <button class="btn primary-btn nav-btn ms-3">Registration</button>
           </div>
-
-          <div class="col-lg-3 d-flex justify-content-end">
-            <button class="btn login-btn nav-btn">Login</button>
-            <button class=" primary-btn nav-btn ms-3">Registration</button>
+    
+          
+          <div class="d-none d-lg-block">
+            <button class="btn login-btn nav-btn ms-2">Login</button>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
+    
+    
 
     <!-- hero section -->
     <section class="hero-section">
@@ -69,7 +90,7 @@
                 <p class="align-self-center mb-0 ms-3">Most of the studetns have given a five star review for us.</p>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 d-none d-lg-block">
               <img src="assets/heroimg.png" alt="hero-img" class="hero-img">
             </div>
         </div>
@@ -108,7 +129,7 @@
           <div class="col-lg-4 align-self-center">
             <h1 class="interesting-features-title titles">Interesting </h1>
             <h1 class="interesting-features-title titles">Features</h1>
-            <p class="interesting-features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p class="interesting-features-description des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
           </div>
           <div class="features col-lg-7">
             <div class="feature-1 mb-4">
@@ -162,7 +183,7 @@
 
         <div class="card-container">
         <!-- card 1 -->
-        <div class="card">
+        <div class="courses-card card">
           <i class="fa-solid fa-tv fa-2x"></i>
           <h3 class="card-title">How to start processing of ux design </h3>
           <p class="card-price mb-0">$300</p>
@@ -177,7 +198,7 @@
           <button class="outline-btn card-btn">Join Now</button>
         </div>
         <!-- card 2 -->
-        <div class="card">
+        <div class="courses-card card">
           <i class="fa-solid fa-dollar-sign fa-2x"></i>
           <h3 class="card-title">Starting Finance for Beginners</h3>
           <p class="card-price mb-0">$300</p>
@@ -192,7 +213,7 @@
           <button class="outline-btn card-btn">Join Now</button>
           </div>
         <!-- card 3 -->
-        <div class="card">
+        <div class="courses-card card">
           <i class="fa-solid fa-user fa-2x"></i>
           <h3 class="card-title">Advance Management & Psycology</h3>
           <p class="card-price mb-0">$300</p>
@@ -207,7 +228,7 @@
           <button class="outline-btn card-btn">Join Now</button>
         </div>
           <!-- card 4 -->
-        <div class="card">
+        <div class="courses-card card">
           <i class="fa-solid fa-tv fa-2x"></i>
           <h3 class="card-title">Basic to advance English learning </h3>
           <p class="card-price mb-0">$300</p>
@@ -222,7 +243,7 @@
           <button class="outline-btn card-btn">Join Now</button>
           </div>
         <!-- card 5 -->
-        <div class="card premium-card">
+        <div class="card premium-card courses-card">
           <i class="fa-solid fa-warehouse fa-2x"></i>
           <h3 class="card-title">Warehouse and Stock Certification</h3>
           <p class="card-price mb-0">$300</p>
@@ -237,7 +258,7 @@
           <button class="outline-btn card-btn">Join Now</button>
         </div>
         <!-- card 6 -->
-        <div class="card">
+        <div class="courses-card card">
           <i class="fa-solid fa-computer fa-2x"></i>
           <h3 class="card-title">How to start Website Development</h3>
           <p class="card-price mb-0">$300</p>
@@ -259,27 +280,27 @@
     </section>
 
     <!-- about section -->
-     <div class="hero-section">
+     <section class="hero-section about-section">
        <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-6">
             <h1 class="titles">High quality video, audio, & live class</h1>
           </div>
           <div class="col-lg-6">
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod elit sapien, eu tempor diam rhoncus et. </p>
+            <p class="description des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod elit sapien, eu tempor diam rhoncus et. </p>
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-12">
             <div class="pause-icon">
               <i class="fa-solid fa-play"></i>
             </div>
             <img src="assets/aboutimg.webp" class="about-img" alt="">
-            <p class="fw-bold">Introduction our mentor</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur 
+            <p class="about-title fw-bold">Introduction our mentor</p>
+            <p class="description about-description">Lorem ipsum dolor sit amet, consectetur 
               adipiscing elit.Nunc euismod elit sapien, eu tempor diam.</p>
           </div>
-          <div class="col-lg-6 d-flex justify-content-between flex-wrap">
+          <div class="col-lg-6 col-md-12 d-flex justify-content-between flex-wrap gap-0 mt-5">
             <!-- card 1 -->
               <div class="services-card mb-4">
                 <div class="review-icon about-icon">
@@ -289,7 +310,7 @@
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
               <!-- card 2 -->
-              <div class="services-card mb-4">
+                <div class="services-card mb-4">
                 <div class="review-icon about-icon">
                   <i class="fa-solid fa-video"></i>
                 </div>
@@ -297,7 +318,7 @@
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
               </div>
               <!-- card 3 -->
-              <div class="services-card">
+              <div class="services-card mb-4">
                 <div class="review-icon about-icon">
                   <i class="fa-solid fa-life-ring"></i>
                 </div>
@@ -305,7 +326,7 @@
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
               </div>
               <!-- card 4 -->
-              <div class="services-card">
+              <div class="services-card mb-4">
                 <div class="review-icon about-icon">
                   <i class="fa-solid fa-message"></i>
                 </div>
@@ -315,6 +336,154 @@
           </div>
         </div>
        </div>
-     </div>
+     </section>
+
+     <!-- Feedback section -->
+      <section>
+        <div class="container">
+          <h1 class="titles text-center">People says about Courses</h1>
+          <p class="description feedback-description des text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod elit sapien, eu tempor diam rhoncus et. </p>
+          <div class="row justify-content-center mb-5">
+            <!-- card 1 -->
+            <div class="col-lg-6 mb-4">
+              
+              <div class="card feedback-card">
+                <div class="card-details d-flex">
+                  <div class="card-img">
+                    <img src="assets/people2.png" alt="">
+                  </div>
+                  <div class="card-body ms-3">
+                    <div class="star-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="card-title">Best Learning Platform</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc euismod elit sapien, eu tempor diam rhoncus et. <a href="#"> More </a></p>
+
+                    <div class="who-rated position-absolute bottom-0">
+                      <p class="pb-0 mb-0">John Doe</p>
+                      <p>Student</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-lg-6">  
+              <div class="card feedback-card">
+                <div class="card-details d-flex">
+                  <div class="card-img">
+                    <img src="assets/people1.png" alt="">
+                  </div>
+                  <div class="card-body ms-3">
+                    <div class="star-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="card-title">Excellent Tutor</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc euismod elit sapien, eu tempor diam rhoncus et. <a href="#"> More </a></p>
+
+                    <div class="who-rated position-absolute bottom-0">
+                      <p class="pb-0 mb-0">Farishta Ahmed</p>
+                      <p>Student</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faded-line"></div>
+          <p class="text-center date-text"><span>01</span>/03</p>
+        </div>
+      </section>
+
+      <!-- subscribe section -->
+      <section class="subscribe-section">
+        <div class="container text-white text-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="subscribecard">
+                <img src="assets/elipse2.png" alt="" class="elipse2">
+                <img src="assets/elipse2.png" alt="" class="elipse3">
+                <h2 class="subscribe-title text-white">Subscribe for get update for every courses</h2
+                  >
+                  <p class="subscribe-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+                  <div class="subscribe-form">
+                    <input type="email" placeholder="Enter email address" class="subscribe-input">
+                    <button class="primary-btn secondary-btn subscribe-btn">Subscribe</button>
+                    <img src="assets/elipse3.png" alt="" class="elipse4">
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- footer section -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <p class="navbar-brand ">LOGO8</p>
+              <p class="footer-description mt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+
+              <div class="links ">
+                <div class="link-icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="link-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="link-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="link-icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+              <h2 class="footer-title">Courses</h2>
+              <p class="footer-title-p">Classroom courses</p>
+              <p class="footer-title-p">Online courses</p>
+              <p class="footer-title-p">E-learning course</p>
+              <p class="footer-title-p">Video courses</p>
+              
+            </div>
+            <div class="col-lg-3 mb-4">
+              <h2 class="footer-title">Community</h2>
+              <p class="footer-title-p">Learners</p>
+              <p class="footer-title-p">Developers</p>
+              <p class="footer-title-p">Blogs</p>
+              <p class="footer-title-p">Teaching center</p>
+              <p class="footer-title-p">Transaction</p>
+            </div>
+            <div class="col-lg-2 mb-4">
+              <h2 class="footer-title">Quick Links</h2>
+              <p class="footer-title-p">Home</p>
+              <p class="footer-title-p">Registration</p>
+              <p class="footer-title-p">All Courses</p>
+              <p class="footer-title-p">Admissions</p>
+              <p class="footer-title-p">Programs</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright text-center text-white">
+          <p class="m-0">2022 LOGO8 | All rights reserved</p>
+        </div>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
