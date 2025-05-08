@@ -139,6 +139,18 @@ header {
   padding: 140px 0 210px 0;
   position: relative;
 }
+.shadow-img {
+  width: 80px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 4;
+  left: 9px;
+  top: 28px;
+  filter: blur(6px);
+  border-radius: 8px;
+}
+
 .hero-title {
   font-size: 4rem;
   font-weight: 600;
@@ -186,8 +198,8 @@ header {
 }
 .hero-img {
   position: absolute;
-  right: 0;
   top: 35px;
+  width: 650px;
 }
 
 /* search section */
@@ -213,7 +225,7 @@ header {
 .search-2 p,
 .dropdown-icon {
   font-size: 1.125rem;
-  color: var(--secondary-font-color);
+  color: #74757e;
 }
 .search-btn {
   height: 77px;
@@ -324,13 +336,13 @@ header {
 }
 .card-title {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-font-color);
+  font-weight: 500;
+  color: #312a53;
   margin-bottom: 22px;
 }
 .card-price {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--primary-color);
 }
 .card i {
@@ -359,6 +371,7 @@ header {
 .premium-card .card-title,
 .premium-card .card-price {
   color: white;
+  font-weight: 500;
 }
 .premium-card .card-btn {
   background-color: var(--primary-color);
