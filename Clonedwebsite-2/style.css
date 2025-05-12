@@ -106,7 +106,7 @@ header {
   border-top-right-radius: 6px;
   transition: all 0.3s ease-in-out !important;
   display: flex;
-  align-items: center; /* Vertically center the text within the nav item */
+  align-items: center;
 }
 
 .nav-link:hover {
@@ -472,12 +472,12 @@ header {
 .img-circular-container::after {
   content: "";
   position: absolute;
-  bottom: -15px; /* Tighter spacing */
+  bottom: -15px;
   left: 30%;
-  width: 40%; /* Narrower oval */
-  height: 4px; /* Thinner height */
-  background: rgba(0, 0, 0, 0.25); /* Darker shadow */
-  filter: blur(3px); /* Softer blur */
+  width: 40%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(3px);
   border-radius: 50%;
   z-index: 0;
 }
@@ -863,7 +863,7 @@ footer .row {
 }
 .custom-input {
   width: 90% !important;
-  padding: 12px 60px 12px 20px; /* left padding for text, right for icon/button */
+  padding: 12px 60px 12px 20px;
   border: none;
   border-radius: 30px !important;
   background-color: #e0e0e0;

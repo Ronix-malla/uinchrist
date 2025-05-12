@@ -44,56 +44,277 @@
     </div>
 
     <!-- navbar  -->
-    <header>
-      <div class="container">
-        <div class="row w-100">
-          <div class="col-lg-4 d-flex align-items-center">
+    <header >
+      <div class="container "">
+        <div class="row">
+          <div class="col-lg-4">
             <img src="assets/logo.png" alt="" class="web-logo" />
           </div>
-    
+
           <div class="col-lg-8">
             <nav class="navbar navbar-expand-lg p-0">
-              <!-- Toggler Button -->
-              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-              <!-- Collapsible Content -->
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto">
-                  <!-- All existing nav items go here -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                      HOME
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Landing Page</a></li>
-                      <li><a class="dropdown-item" href="#">Prebuilt Websites <span class="badge bg-dark ms-1">HOT</span></a></li>
-                      <li><a class="dropdown-item" href="#">Classic</a></li>
-                      <li><a class="dropdown-item" href="#">Corporate</a></li>
-                      <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                      <li><a class="dropdown-item" href="#">Blog</a></li>
-                      <li><a class="dropdown-item" href="#">One Page</a></li>
-                    </ul>
-                  </li>
-                  <!-- Add other nav items similarly -->
-                </ul>
-    
-                <!-- Icons -->
-                <div class="icon-collection d-flex">
-                  <div class="nav-icons facebook-icon">
-                    <i class="fa-brands fa-facebook-f"></i>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    HOME
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Prebuilt Websites
+                        <span class="badge bg-dark ms-1">HOT</span>
+                      </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Classic</a></li>
+                    <li><a class="dropdown-item" href="#">Corporate</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">One Page</a></li>
+                  </ul>
+                </li>
+
+                <!-- mega menu -->
+                <li class="nav-item dropdown mega-dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    ELEMENTS
+                  </a>
+                  <div class="dropdown-menu mega-menu p-4">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <h6 class="dropdown-header">Elements 1</h6>
+                        <a class="dropdown-item" href="#">Accordions</a>
+                        <a class="dropdown-item" href="#">Alerts</a>
+                        <a class="dropdown-item" href="#">
+                          Animations <span class="badge bg-dark">HOT</span>
+                        </a>
+                        <a class="dropdown-item" href="#">Arrows</a>
+                        <a class="dropdown-item" href="#">Badges</a>
+                        <a class="dropdown-item" href="#">Before / After</a>
+                        <a class="dropdown-item" href="#">Blockquotes</a>
+                        <a class="dropdown-item" href="#">Buttons</a>
+                        <a class="dropdown-item" href="#">Call to Action</a>
+                        <a class="dropdown-item" href="#">Cards</a>
+                        <a class="dropdown-item" href="#">Carousels</a>
+                        <a class="dropdown-item" href="#">Cascading Images</a>
+                      </div>
+                      <div class="col-md-3">
+                        <h6 class="dropdown-header">Elements 2</h6>
+                        <a class="dropdown-item" href="#">Content Rotate</a>
+                        <a class="dropdown-item" href="#">Countdowns</a>
+                        <a class="dropdown-item" href="#">Counters</a>
+                        <a class="dropdown-item" href="#">Dividers</a>
+                        <a class="dropdown-item" href="#">Forms</a>
+                        <a class="dropdown-item" href="#">Headings</a>
+                        <a class="dropdown-item" href="#">Icons</a>
+                        <a class="dropdown-item" href="#">Icon Boxes</a>
+                        <a class="dropdown-item" href="#">
+                          Image Frames <span class="badge bg-dark">HOT</span>
+                        </a>
+                        <a class="dropdown-item" href="#">Image Gallery</a>
+                        <a class="dropdown-item" href="#">Image Hotspots</a>
+                        <a class="dropdown-item" href="#">Lightboxes</a>
+                      </div>
+                      <div class="col-md-3">
+                        <h6 class="dropdown-header">Elements 3</h6>
+                        <a class="dropdown-item" href="#">Lists</a>
+                        <a class="dropdown-item" href="#">Maps</a>
+                        <a class="dropdown-item" href="#">Medias</a>
+                        <a class="dropdown-item" href="#">Modals</a>
+                        <a class="dropdown-item" href="#">Parallax</a>
+                        <a class="dropdown-item" href="#">Particles</a>
+                        <a class="dropdown-item" href="#">Posts</a>
+                        <a class="dropdown-item" href="#">Pricing Tables</a>
+                        <a class="dropdown-item" href="#">Process</a>
+                        <a class="dropdown-item" href="#">Progress Bars</a>
+                        <a class="dropdown-item" href="#">Random Images</a>
+                        <a class="dropdown-item" href="#">Read More</a>
+                      </div>
+                      <div class="col-md-3">
+                        <h6 class="dropdown-header">Elements 4</h6>
+                        <a class="dropdown-item" href="#">Sections</a>
+                        <a class="dropdown-item" href="#">Shape Dividers</a>
+                        <a class="dropdown-item" href="#">Star Ratings</a>
+                        <a class="dropdown-item" href="#">Sticky Elements</a>
+                        <a class="dropdown-item" href="#">Tables</a>
+                        <a class="dropdown-item" href="#">Tabs</a>
+                        <a class="dropdown-item" href="#">Testimonials</a>
+                        <a class="dropdown-item" href="#">Toggles</a>
+                        <a class="dropdown-item" href="#"
+                          >Tooltips & Popovers</a
+                        >
+                        <a class="dropdown-item" href="#">Typography</a>
+                        <a class="dropdown-item" href="#">Word Rotator</a>
+                        <a class="dropdown-item" href="#">360° Image Viewer</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="nav-icons twitter-icon">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </div>
-                  <div class="nav-icons linkedin-icon">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </div>
+                </li>
+                <!-- FEATURES -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    FEATURES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Headers</a></li>
+                    <li><a class="dropdown-item" href="#">Navigations</a></li>
+                    <li><a class="dropdown-item" href="#">Page Headers</a></li>
+                    <li><a class="dropdown-item" href="#">Footers</a></li>
+                    <li><a class="dropdown-item" href="#">Sliders</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Layout Options</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Extra</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Style Switcher <span class="badge bg-dark">HOT</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Admin Extension</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- PAGES -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Layouts</a></li>
+                    <li><a class="dropdown-item" href="#">Extra</a></li>
+                    <li><a class="dropdown-item" href="#">Team</a></li>
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Login / Register</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">User Profile</a></li>
+                  </ul>
+                </li>
+
+                <!-- portfolio -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    PORTFOLIO
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li></li>
+                      <a class="dropdown-item" href="#">Single Project</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Grid Layouts</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Masonry Layouts</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sidebar Layouts</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Extra</a></li>
+                  </ul>
+                </li>
+
+                <!-- blog -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    BLOG
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Large Image</a></li>
+                    <li><a class="dropdown-item" href="#">Medium Image</a></li>
+                    <li><a class="dropdown-item" href="#">Grid</a></li>
+                    <li><a class="dropdown-item" href="#">Masonry</a></li>
+                    <li><a class="dropdown-item" href="#"> Timeline</a></li>
+                    <li><a class="dropdown-item" href="#"> Single Post</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Post Comments</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- shop -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    SHOP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Single Product</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">4 Columns</a></li>
+                    <li><a class="dropdown-item" href="#">3 Columns</a></li>
+                    <li><a class="dropdown-item" href="#">2 Columns</a></li>
+                    <li><a class="dropdown-item" href="#">1 Columns </a></li>
+                    <li><a class="dropdown-item" href="#">Cart </a></li>
+                    <li><a class="dropdown-item" href="#">Login </a></li>
+                    <li><a class="dropdown-item" href="#">Checkout </a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Order Complete </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- icons -->
+              <div class="icon-collection d-flex  ">
+                <div class="nav-icons facebook-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="nav-icons twitter-icon">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="nav-icons linkedin-icon"   >
+                  <i class="fa-brands fa-linkedin-in"></i>
                 </div>
               </div>
             </nav>
+
+           
           </div>
+
+
         </div>
       </div>
     </header>
