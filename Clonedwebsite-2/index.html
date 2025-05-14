@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <!-- top section -->
@@ -372,16 +373,19 @@
       <!-- about section -->
        <section class="about-section">
         <div class="container">
-          <h1 class="section-header">Porto is <span>extremly</span> beautiful and fully responsive.</h1>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.</p>
+          <h1 class="section-header hidden-1">Porto is 
+            <span>extremly</span> 
+            beautiful and fully responsive.</h1>
+          <p class="text-center hidden-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.</p>
         </div>
        </section>
 
        <!-- how it works section -->
         <section class="work-section mt-5 d-flex justify-content-center" >
-          
+          <img src="assets/cloud.png" alt="" class="img-cloud">
           <div class="background-img ">
             <div class="container">
+              <img src="assets/sun.png" alt="" class="img-sun">
                 <div class="row">
                <div class="col-lg-2">
                 <div class="img-circular-container strategy-img">
@@ -522,7 +526,7 @@
                   <p>and more...</p>
 
                   <!-- toogle 1 -->
-                  <p class="d-inline-flex gap-1 tooglemenu mb-1">
+                  <p class="d-inline-flex gap-1 tooglemenu mb-0">
                     <a class="btn toogle-btn text-start " data-bs-toggle="collapse" href="#collapseone" role="button" aria-expanded="false" aria-controls="collapseExample"> 
                     <i class="fa-regular fa-gem me-2 "></i>Creative Websites
                     </a>
@@ -539,7 +543,7 @@
                   </div>
                   </div>
                   <!-- toogle 2 -->
-                  <p class="d-inline-flex gap-1 tooglemenu mb-1">
+                  <p class="d-inline-flex gap-1 tooglemenu mb-0 mt-1">
                     <a class="btn toogle-btn text-start " data-bs-toggle="collapse" href="#collapsetwo" role="button" aria-expanded="false" aria-controls="collapseExample"> 
                       <i class="fa-regular fa-message me-2"></i>Contact Forms
                     </a>
@@ -551,7 +555,7 @@
                   </div>
                   </div>
                   <!-- toogle 3 -->
-                  <p class="d-inline-flex gap-1 tooglemenu mb-1">
+                  <p class="d-inline-flex gap-1 tooglemenu mb-0 mt-1">
                     <a class="btn toogle-btn text-start " data-bs-toggle="collapse" href="#collapsethree" role="button" aria-expanded="false" aria-controls="collapseExample"> 
                       <i class="fas fa-th-large me-2"></i></i>Creative Websites
                     </a>
@@ -603,19 +607,19 @@
             </section>
 
             <!-- review section -->
-            <section class="review-section">
+            <section class="review-section animation-time-delay hidden-2">
               <div class="review-background-img"></div>
               <div class="container">
-                <div class="row">
+                <div class="row animation-time-delay hidden-2">
                  
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 ">
                     <h2 class="review-title">
                       Latest <span>Posts</span>
                       <img src="assets/image.png" alt="" class="sliderimg ms-3" />
                     </h2>
             
                     
-                    <div class="row">
+                    <div class="row ">
                       <!-- Review Card 1 -->
                       <div class="col-lg-6 d-flex pe-0 mb-4">
                         <div class="review-date d-flex flex-column me-3">
