@@ -429,15 +429,14 @@ header {
   position: relative;
   padding: 6.44px 8px;
   background-color: #21252a;
-  width: 180px ;
-  height: 55px; 
+  width: 180px;
+  height: 55px;
   overflow: hidden;
   vertical-align: middle;
   margin-top: 2px;
 }
-.about-section-2 .container .section-header .text-changing{
-  width: 140px;
-}
+
+
 
 .text-changing .word {
   position: absolute;
@@ -447,7 +446,7 @@ header {
   opacity: 0;
   transform: translateY(50px);
   color: white;
-  animation: rotateWord 6s linear infinite;
+  animation: rotateWord3 6s linear infinite;
 }
 
 .text-changing .word-1 {
@@ -460,7 +459,7 @@ header {
   animation-delay: 4s;
 }
 
-@keyframes rotateWord {
+@keyframes rotateWord3 {
   0% {
     opacity: 0;
     transform: translateY(-50px);
@@ -483,7 +482,40 @@ header {
   }
 }
 
-
+.about-section-2 .container .section-header .text-changing {
+  width: 140px;
+}
+.about-section-2 .container .section-header .text-changing .word {
+  animation: rotateWord2 4s linear infinite;
+}
+.about-section-2 .container .section-header .text-changing .word-1 {
+  animation-delay: 0s;
+}
+.about-section-2 .container .section-header .text-changing .word-1 {
+  animation-delay: 2s;
+}
+@keyframes rotateWord2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
 .about-section .container p {
   font-size: 1.1rem;
   position: relative;
