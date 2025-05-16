@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+}
+body {
+  font-size: 1rem;
+}
+
+:root {
+  /* font  */
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Outfit", sans-serif;
+
+  /* color */
+  --primary-color: #f8cc16;
+  --secondary-color: #f2f4f5;
+}
+.container {
+  width: 1064px !important;
+}
+
+/* navbar */
+nav {
+  padding: 19px 236px;
+  background-color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+
+nav img {
+  width: 26px;
+  height: 26px;
+  margin-left: 11px;
+}
+
+.active-item {
+  font-weight: 900;
+  position: relative;
+  margin-left: 1rem;
+}
+.active-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+.hover-item {
+  position: relative;
+}
+.hover-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 0%;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+.hover-item:hover::after {
+  width: 100%;
+}
+
+.dropdown-menus ul li a {
+  font-size: 15px;
+  font-weight: bold;
+}
+/* main section */
+.chap-info {
+  position: relative;
+  margin-bottom:  9px;
+  padding: 1rem 1.56rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+.chap-info h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.chap-info .total-verses {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #6d727a;
+}
+.chap-info .total-read {
+  font-size: 15px;
+  color: #353336;
+}
+
+.status{
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  height: 37px;
+  width: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.currently-reading{
+  border: 1px solid black;
+}

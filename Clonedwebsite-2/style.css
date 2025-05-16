@@ -379,7 +379,6 @@ header {
 .hero-btn-section .container div p {
   color: white !important;
   opacity: 0.6;
-  margin-left: 0.3rem !important;
   letter-spacing: -0.6px;
   z-index: 3;
 }
@@ -435,8 +434,6 @@ header {
   vertical-align: middle;
   margin-top: 2px;
 }
-
-
 
 .text-changing .word {
   position: absolute;
@@ -518,11 +515,9 @@ header {
 }
 .about-section .container p {
   font-size: 1.1rem;
-  position: relative;
   opacity: 0.6;
   width: 80%;
-  /* animation: ButtomTop 0.8s ease-out forwards;
-  animation-delay: 0.8s; */
+  margin: 0 auto;
 }
 
 /* how it work section */
@@ -656,8 +651,8 @@ header {
   left: 728px;
 }
 .work-des {
-  left: 1040px;
-  top: 400px;
+  left: 110px;
+  top: 380px;
   font-size: 30.8px;
 }
 
@@ -733,6 +728,7 @@ header {
   border-top-right-radius: 0 !important;
   border-end-start-radius: 6px !important;
   border-end-end-radius: 6px !important;
+  width: 349px !important;
   border: 4px solid #f4f4f4 !important;
 }
 .card-body p {
@@ -752,6 +748,9 @@ header {
 }
 .about-section-2 h1 span {
   background-color: var(--primary-color);
+}
+.about-section-2 h1  {
+  letter-spacing: -1px;
 }
 
 /* carousel section  */
@@ -995,7 +994,7 @@ footer .row {
 .emailfield {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
 }
 .emailfield input::placeholder {
   font-size: 12px !important;
@@ -1073,48 +1072,30 @@ footer .row {
   }
 }
 @media (max-width: 1050px) {
-  .img-circular-container {
-    position: static;
-    width: 100px;
-    height: 100px;
-    margin: 1rem auto;
-  }
-
-  .img-circular-container img {
-    width: 145px;
-    height: 145px;
-  }
-
-  .img-circular-container::after {
-    bottom: -8px;
-    left: 20%;
-    width: 60%;
-    height: 6px;
-    filter: blur(4px);
-  }
-
-  .circular-img-big-container {
-    width: 145px !important;
-    height: 145px !important;
-    margin: 1rem auto;
-  }
-
-  .work-description {
-    position: static;
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-  }
-
-  .work-section .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+ 
 }
-@media (max-width: 980px) {
+@media (max-width: 990px) {
   .toogle-btn {
     width: 672px !important;
+  }
+  .card-body {
+    width: 672px !important;
+
+  }
+  .about-section-2 h1{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 765px) {
+  .toogle-btn {
+    width: 493px !important;
+  }
+  .card-body {
+    width: 493px !important;
+
   }
 }
 
