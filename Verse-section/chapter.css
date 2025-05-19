@@ -17,8 +17,9 @@ body {
   --secondary-font: "Outfit", sans-serif;
 
   /* color */
-  --primary-color: #f8cc16;
+  --primary-color: #a91f23;
   --secondary-color: #f2f4f5;
+  --tertiary-color: #3b5163;
 }
 .container {
   width: 1064px !important;
@@ -90,13 +91,12 @@ nav img {
   color: #212529;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   font-size: 15px;
   cursor: pointer;
   font-weight: bold;
   opacity: 0.7;
   transition: all 0.3s ease;
-
 }
 .btn-dropdown:hover {
   color: black;
@@ -106,47 +106,53 @@ nav img {
 .btn-secondary.dropdown-toggle.show {
   color: #000 !important;
 }
-.dropdown-menu{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
-  height: 200px ;
+.dropdown-menu {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 200px;
   overflow: scroll;
 }
-.translation-title{
+.dropdown-item {
+}
+.translation-title {
   font-family: var(--primary-font);
   font-size: 1rem;
   line-height: 24px;
+  font-weight: bold;
+  color: #333;
 }
-.title-shortform{
+.title-shortform {
   font-family: var(--primary-font);
   font-size: 1rem;
-  line-height: 24px; 
+  line-height: 24px;
   font-weight: 700;
-  color: #713F12;
+  color: #713f12;
 }
-.current-translation{
-  border:2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color) !important;
+.current-translation {
+  border: 2px solid var(--primary-color) !important;
+
   border-radius: 6px;
   position: relative;
 }
-.translation-status{
+.translation-status {
   position: static;
-  padding: 6px 6px ;
+  padding: 6px 6px;
   font-size: 10px;
-  color:#4A515A ;
+  color: white;
   background-color: var(--primary-color);
   border-radius: 20px;
 }
-.book-dropdown .dropdown-item{
-  border-bottom: 2px solid #e5e7eb ;
+.dropdown-item {
+  border-left: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+  border-radius: 6px;
   padding: 8px 16px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 /* main section */
 .chap-info {
   position: relative;
-  margin-bottom:  9px;
+  margin-bottom: 9px;
   padding: 1rem 1.56rem;
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
@@ -165,15 +171,16 @@ nav img {
   font-size: 15px;
   color: #353336;
 }
-.chap-info:hover{
+.chap-info:hover {
   background-color: #f7f7f7;
 }
-.status{
+.status {
   position: absolute;
   right: 24px;
   top: 16px;
   border-radius: 20px;
   background-color: var(--primary-color);
+  color: white;
   height: 37px;
   width: 151px;
   display: flex;
@@ -181,6 +188,15 @@ nav img {
   align-items: center;
   cursor: pointer;
 }
-.currently-reading{
+.currently-reading {
   border: 1px solid black;
+}
+
+.book-items li {
+  margin-bottom: 10px !important;
+  
+}
+.book-items h6 {
+  margin-bottom: 0;
+  line-height: 36px;
 }

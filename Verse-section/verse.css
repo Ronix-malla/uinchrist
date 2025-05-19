@@ -11,7 +11,7 @@
   --secondary-font: "Outfit", sans-serif;
 
   /* color */
-  --primary-color: #f8cc16;
+  --primary-color: #a91f23;
   --secondary-color: #f2f4f5;
 }
 html {
@@ -29,6 +29,7 @@ body {
 nav {
   padding: 19px 0;
   background-color: var(--secondary-color);
+  margin-bottom: 50px;
 }
 nav ul {
   list-style: none;
@@ -176,6 +177,6 @@ nav img {
 }
 .info p:nth-child(2){
     font-size: 15px;
-    color: #5C80CF;
+    color: var(--primary-color);
     font-weight: 700;
 }
