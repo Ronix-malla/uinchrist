@@ -34,7 +34,6 @@ hr {
 
   /* color */
   --primary-color: #0088cc;
-  --secondary-color: #a41e22;
 }
 .container {
   width: 1140px !important;
@@ -95,7 +94,7 @@ header {
 }
 
 .web-logo {
-  width: 185px;
+  width: 82px;
 }
 
 .nav-link {
@@ -139,6 +138,31 @@ header {
   display: none !important;
 }
 
+/* Mega Menu Custom Style */
+.mega-menu {
+  width: 1000px;
+  left: -28rem;
+  right: 0;
+  top: 100%;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mega-dropdown {
+  position: relative;
+}
+
+.mega-dropdown .dropdown-menu {
+  display: none;
+}
+
+.mega-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .nav-icons {
   height: 28px;
   width: 28px;
@@ -166,32 +190,6 @@ header {
 
 .linkedin-icon:hover {
   background-color: #0073b2;
-}
-.google-icon:hover {
-  background-color: 	#4285F4;
-}
-.vimeo-icon:hover{
-  background-color: #3D95CE;
-}
-
-.req-demo-btn button {
-  background-color: var(--secondary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  border: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--secondary-color);
-
-  transition: all 0.3s ease-in-out;
-}
-.req-demo-btn button:hover {
-  box-shadow: none;
-  border: 2px solid var(--secondary-color);
-  background-color: transparent;
-  color: var(--primary-color);
 }
 
 /* herosection */
@@ -294,7 +292,7 @@ header {
 .hero-description .word {
   opacity: 0;
   display: inline-block;
-  animation: fadeIn 0.1s ease-out forwards;
+  animation: fadeIn 0.2s ease-out forwards;
   animation-delay: calc(0.2s * var(--word-index));
 }
 
@@ -353,31 +351,6 @@ header {
 }
 .hero-description .word:nth-child(18) {
   --word-index: 17;
-}
-
-.hero-description .word:nth-child(19) {
-  --word-index: 18;
-}
-.hero-description .word:nth-child(20) {
-  --word-index: 19;
-}
-.hero-description .word:nth-child(21) {
-  --word-index: 20;
-}
-.hero-description .word:nth-child(22) {
-  --word-index: 21;
-}
-.hero-description .word:nth-child(23) {
-  --word-index: 22;
-}
-.hero-description .word:nth-child(24) {
-  --word-index: 23;
-}
-.hero-description .word:nth-child(25) {
-  --word-index: 24;
-}
-.hero-description .word:nth-child(26) {
-  --word-index: 25;
 }
 
 @keyframes fadeIn {
@@ -776,7 +749,7 @@ header {
 .about-section-2 h1 span {
   background-color: var(--primary-color);
 }
-.about-section-2 h1 {
+.about-section-2 h1  {
   letter-spacing: -1px;
 }
 
@@ -1099,6 +1072,7 @@ footer .row {
   }
 }
 @media (max-width: 1050px) {
+ 
 }
 @media (max-width: 990px) {
   .toogle-btn {
@@ -1106,8 +1080,9 @@ footer .row {
   }
   .card-body {
     width: 672px !important;
+
   }
-  .about-section-2 h1 {
+  .about-section-2 h1{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -1120,6 +1095,7 @@ footer .row {
   }
   .card-body {
     width: 493px !important;
+
   }
 }
 
