@@ -45,115 +45,120 @@
     </div>
 
     <!-- navbar  -->
-    <header class="" >
-      <div class="container ">
-        <div class="row">
-          <div class="col-lg-3">
-            <img src="assets/logicdomainlogo.jpg" alt="" class="web-logo" />
+    <header>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-lg-3 align-self-start align-self-lg-center">
+            <img src="assets/logicdomainlogo.jpg" alt="" class="web-logo img-fluid" />
           </div>
-
-          <div class="col-lg-9 col-12 d-flex justify-content-end align-items-center">
-            <nav class="navbar navbar-expand-lg p-0">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle active"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    ABOUT COMPANY
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Why Login Domain</a></li>
-                  </ul>
-                </li>
-
-               <!-- solution -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    SOLUTIONS
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Compass :: Capital Program Management System</a></li>
-                    <li><a class="dropdown-item" href="#">Navigator :: Asset and Space Management</a></li>
-                    <li><a class="dropdown-item" href="#">Tempest :: Campus Energy Planning and Anaytics</a></li>
-                    <li><a class="dropdown-item" href="#">BEACON :: Maintenance and Operations Budgets System</a></li>
-                  </ul>
-                </li>
-
-                <!-- Services -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    SERVICES
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Implementation</a></li>
-                    <li><a class="dropdown-item" href="#">System Integrations</a></li>
-                    <li><a class="dropdown-item" href="#">Training & Support</a></li>
-                    
-                  </ul>
-                </li>
-
-                <!-- CONTACT -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    CONTACT
-                  </a>
-                </li>
-
-               
-              </ul>
-              <!-- icons -->
-              <div class="icon-collection d-flex  ">
-                <div class="req-demo-btn">
-                  <button>Request Demo</button>
-                </div>
-                <div class="nav-icons facebook-icon">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                
-                <div class="nav-icons google-icon">
-                  <i class="fa-brands fa-google"></i>
-                </div>
-                <div class="nav-icons vimeo-icon">
-                  <i class="fa-brands fa-vimeo-v"></i>
-                </div>
-                <div class="nav-icons twitter-icon">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </div>
-                <div class="nav-icons linkedin-icon"   >
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </div>
+    
+          <!-- Navbar -->
+          <div class="col-6 col-lg-9 ">
+            <nav class="navbar navbar-expand-lg justify-content-end">
+              <!-- Toggler for mobile -->
+              <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <!-- Collapsible menu items -->
+              <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav me-3">
+                  <!-- ABOUT COMPANY -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle active"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      ABOUT COMPANY
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Why Login Domain</a></li>
+                    </ul>
+                  </li>
+    
+                  <!-- SOLUTIONS -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="solutionsDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      SOLUTIONS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Compass</a></li>
+                      <li><a class="dropdown-item" href="#">Navigator</a></li>
+                      <li><a class="dropdown-item" href="#">Tempest</a></li>
+                      <li><a class="dropdown-item" href="#">BEACON</a></li>
+                    </ul>
+                  </li>
+    
+                  <!-- SERVICES -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="servicesDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      SERVICES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Implementation</a></li>
+                      <li><a class="dropdown-item" href="#">System Integrations</a></li>
+                      <li><a class="dropdown-item" href="#">Training & Support</a></li>
+                    </ul>
+                  </li>
+    
+                  <!-- CONTACT -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                </ul>
+    
+                <!-- Buttons and icons -->
+                <div class="icon-collection d-flex  align-items-center">
+                  <div class="req-demo-btn">
+                    <button >Request Demo</button>
+                  </div>
+                  <div class="nav-icons facebook-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  
+                  <div class="nav-icons google-icon">
+                    <i class="fa-brands fa-google"></i>
+                  </div>
+                  <div class="nav-icons vimeo-icon">
+                    <i class="fa-brands fa-vimeo-v"></i>
+                  </div>
+                  <div class="nav-icons twitter-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </div>
+                  <div class="nav-icons linkedin-icon"   >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
               </div>
             </nav>
-
-           
           </div>
-
-
         </div>
       </div>
     </header>
+    
 
     <!-- herosection -->
      <section class="hero-section">
@@ -225,17 +230,17 @@
           <div class="row">
             <div class="col-12">
               <h1 class="section-header hidden-1 text-center">
-                Porto is 
+                
                 <span class="text-changing text-center">
-                  <span class="word word-1">extremely</span>
-                  <span class="word word-2">incredibly</span>
-                  <span class="word word-3">especially</span>
+                  <span class="word word-1">Reliable</span>
+                  <span class="word word-2">Scalable</span>
+                  <span class="word word-3">Elegent</span>
                 </span>
-                beautiful and fully responsive.
+                That's Logic Domain
               </h1>
             </div>
             <div class="col-12 text-center">
-              <p class=" hidden-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.</p>
+              <p class=" hidden-1">Logic Domain builds intelligent, scalable software that blends technical excellence with elegant design helping businesses innovate, streamline and grow.</p>
             </div>
           </div>
           
@@ -248,33 +253,33 @@
           <div class="background-img ">
             <div class="container">
               <img src="assets/sun.png" alt="" class="img-sun">
-                <div class="row">
-               <div class="col-lg-2">
+                <div class="row justify-content-center">
+               <div class="col-lg-2 col-md-12 col-12 d-flex flex-column align-items-center"> 
                 <div class="img-circular-container strategy-img">
                   <img src="assets/strategy.png" alt="">
                 </div>
                 <p class="work-description strat-des">Strategy</p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-md-12 col-12 d-flex flex-column align-items-center">
                 <div class="img-circular-container planning-img">
                   <img src="assets/planning.png" alt="">
                 </div>
                 <p class="work-description plan-des">Planning</p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-md-12 col-12 d-flex flex-column align-items-center">
                 <div class="img-circular-container build-img">
                   <img src="assets/build.png" alt="">
                 </div>
                 <p class="work-description build-des">Build</p>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-5 col-md-12 col-12 d-flex flex-column align-items-center">
                 <div class="img-circular-container circular-img-big-container">
                   <div class="flipper">
                     <img src="assets/ourwork.jpg" alt="" class="front">
                     <img src="assets/ourwork2.jpg" alt="" class="back">
                   </div>
-                  <p class="work-description work-des">Our Work</p>
                 </div>
+                <p class="work-description work-des">Our Work</p>
                </div>
                
                 </div>
@@ -295,93 +300,58 @@
               <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-12 p-0 feature align-self-start">
                   <h1>Our <span>Features</span></h1>
-                  <div class="row">
+                  <div class="row ">
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 align-self-start">
                       <!-- feature -->
                       <div class="feature-box d-flex">
                         <div class="feature-box-img">
-                          <i class="fa-solid fa-gear fa-xl"></i>
+                          <i class="fa-solid fa-users-gear fa-xl"></i>
                         </div>
                         <div class="feature-box-info">
-                          <h3>Customer Support</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                          <h3>Compass <sup class="lead">TM</sup></h3>
+                          <p>End-to-End, Cloud-based Program /Project Management Software</p>
                         </div>
                       </div>
+                     
                       <!-- feature -->
                       <div class="feature-box d-flex">
                         <div class="feature-box-img">
-                          <i class="fa-regular fa-file fa-xl"></i>
+                          <i class="fa-solid fa-people-group fa-xl"></i>
                         </div>
                         <div class="feature-box-info">
-                          <h3>HTML5/ CSS3/ JS</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                          <h3>Navigator <sup class="lead">TM</sup></h3>
+                          <p>Integrated Asset and Space Management Software</p>
                         </div>
                       </div>
-                      <!-- feature -->
-                      <div class="feature-box d-flex">
-                        <div class="feature-box-img">
-                          <i class="fa-brands fa-google fa-xl"></i>
-                        </div>
-                        <div class="feature-box-info">
-                          <h3>500+ Google Fonts</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
-                        </div>
-                      </div>
-                      <!-- feature -->
-                      <div class="feature-box d-flex">
-                        <div class="feature-box-img">
-                          <i class="fa-solid fa-pencil fa-xl"></i>
-                        </div>
-                        <div class="feature-box-info">
-                          <h3>Colors</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
-                        </div>
-                      </div>
+                     
+                      
                     </div>
 
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 align-self-start">
                       <!-- feature -->
                       <div class="feature-box d-flex">
                         <div class="feature-box-img">
-                          <i class="fa-solid fa-layer-group fa-xl"></i>
+                          <i class="fa-solid fa-arrow-trend-up fa-xl"></i>
                         </div>
                         <div class="feature-box-info">
-                          <h3>Sliders</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                          <h3>Tempest <sup class="lead">TM</sup></h3>
+                          <p>Enterprise Energy Auditing, Analytics and Reporting</p>
                         </div>
                       </div>
                       <!-- feature -->
                       <div class="feature-box d-flex">
                         <div class="feature-box-img">
-                          <i class="fa-regular fa-user fa-xl"></i>
+                          <i class="fa-solid fa-folder-open fa-xl"></i>
                         </div>
                         <div class="feature-box-info">
-                          <h3>Icons</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                          <h3>Beacon <sup class="lead">TM</sup></h3>
+                          <p>Facilities Management Budgeting and Accounting System</p>
                         </div>
                       </div>
-                      <!-- feature -->
-                      <div class="feature-box d-flex">
-                        <div class="feature-box-img">
-                          <i class="fa-solid fa-bars fa-xl"></i>                     
-                        </div>
-                        <div class="feature-box-info">
-                          <h3>Buttons</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
-                        </div>
-                      </div>
-                      <!-- feature -->
-                      <div class="feature-box d-flex">
-                        <div class="feature-box-img">
-                          <i class="fa-solid fa-desktop fa-xl"></i>
-                        </div>
-                        <div class="feature-box-info">
-                          <h3>Lightbox</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
-                        </div>
-                      </div>
+                     
+                      
                     </div>
                   </div>
                 </div>
@@ -455,15 +425,15 @@
             <div class="container">
               <div class="row">
                 <div class="col-12 text-center">
-                  <h1 class="section-header">We're not the only ones 
+                  <h1 class="section-header">Not just 
                     <span class="text-changing text-center">
-                      <span class="word word-1">happy</span>
-                      <span class="word word-2">excited</span>
+                      <span class="word word-1">Trusted</span>
+                      <span class="word word-2">Prefered</span>
                     </span>
-                     about Porto Template...</h1>
+                     Logic Domain software makes the difference...</h1>
                 </div>
                 <div class="col-12 text-center">
-                  <h4>50,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4>
+                  <h4>50,000 CUSTOMERS IN 100 COUNTRIES USES LOGIC DOMAIN. MEET OUR CUSTOMERS.</h4>
 
                 </div>
               </div>
@@ -565,68 +535,136 @@
               </a>
             </div>
 
+            <!-- demo section -->
+            <section class="hero-btn-section demo-section">
+              <div class="container">
+                <div class="row justify-content-between">
+      
+                  <div class="col-lg-8 col-sm-12">
+                    <h3 class="demo-title">Construction Industry Software</h3>
+                   
+                  </div>
+                  <div class="col-lg-4 d-flex gap-2  justify-content-end align-items-center ">
+                    <button class="primary-btn">SCHEDULE A DEMO</button>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </section>
             <!-- footer -->
              <footer>
               <div class="container">
                 <div class="highlight">
-                  <span>Get in Touch</span>
+                  <span class="highlight-text">Get in Touch</span>
                 </div>
 
                 <div class="row text-white ">
-                  <div class="col-lg-4 col-md-6 col-12 align-self-start mb-5">
-                    <h5 class="footer-title">NEWSLETTER</h5>
-                    <p class="footer-description-1">
+                  <!-- about Company -->
+                  <div class="col-lg-2 col-md-6 col-12 align-self-start mb-4">
+                    <h5 class="footer-title">ABOUT COMPANY</h5>
+                    
+                    <div class="d-flex flex-column gap-2">
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">About Us </p>
+                      </a>
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">Mission</p>
+                      </a>
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">Vision</p>
+                      </a>
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">Why Logic Domain</p>
+                      </a>
+                      
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-12 align-self-start mb-4">
+                    <h5 class="footer-title">SERVICES</h5>
+                    <!-- <p class="footer-description-1">
                       Keep up on our always evolving product features and technology. Enter your e-mail address and subscribe to our newsletter.
                     </p>
                     <div class="emailfield position-relative">
                       <input type="email" placeholder="Email Address" class="form-control custom-input">
                       
                       <button class="subscribe-btn">GO!</button>
+                    </div> -->
+                    <div class="d-flex flex-column gap-2">
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">Implementation</p>
+                      </a>
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">System Integrations</p>
+                      </a>
+                      <a class="sub-title-footer services d-flex align-items-center" href="#" >
+                        <i class="fa-solid fa-greater-than fa-2xs me-2"></i>  
+                        <p class="mb-0">Training & Support</p>
+                      </a>
+                      
                     </div>
                     
                   </div>
 
-                  <div class="col-lg-3 col-md-6 col-12 second-footer-title align-self-start">
-                    <h5 class="footer-title">LATEST POSTS</h5>
-                    <div>
-                     <p class="sub-title-footer"> <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Lorem ipsum dolor sit amet.</p>
-                     <p class="footer-description">12:55 AM Dec 19th</p>
-                    </div>
-                    <div>
-                     <p class="sub-title-footer"> <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Ipsum dolor sit amet.</p>
-                     <p class="footer-description">12:55 AM Dec 19th</p>
-                    </div>
-                    <div>
-                     <p class="sub-title-footer"> <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Lorem ipsum dolor sit amet.</p>
-                     <p class="footer-description">12:55 AM Dec 19th</p>
-                    </div>
+                  <!-- Services -->
+                  <div class="col-lg-3 col-md-6 col-12 second-footer-title align-self-start mb-4">
+                    <h5 class="footer-title">SERVICES</h5>
+                    <a class="sub-title-footer" href="#">
+                      <i class="fa-solid fa-greater-than fa-2xs me-1"></i> BEACON :: 
+                      <p class="footer-description">Maintenance and Operations Budgeting System</p>
+                     
+                    </a>
+                    <a class="sub-title-footer" href="#">
+                      <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Tempest :: 
+                      <p class="footer-description">Campus Energy Planning and Analytics</p>
+                     
+                  </a>
+                    <a class="sub-title-footer" href="#">
+                      <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Navigator :: 
+                      <p class="footer-description">Asset and Space Management System</p>
+                     
+                    </a>
+                    <a class="sub-title-footer" href="#">
+                      <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Compass :: 
+                      <p class="footer-description">Capital Program Management System</p>
+                     
+                    </a>
+                   
                   </div>
 
+                  <!-- contact us -->
                   <div class="col-lg-3 col-md-6 col-12 align-self-start">
                     <h5 class="footer-title">CONTACT US</h5>
                     <div>
-                      <p class="footer-description-1"><i class="fa-solid fa-circle-dot fa-sm footer-icon me-1"></i> 234 Street Name, City Name</p>
+                      <p class="footer-description-1"><i class="fa-solid fa-circle-dot fa-sm footer-icon me-1"></i> 3972 Barranca Pkwy. Suite J Irvine, California 92606</p>
                     </div>
                     <div>
-                      <p class="footer-description-1 hover-effect"><i class="fa-brands fa-whatsapp fa-sm footer-icon me-1"></i> (800) 123-4567</p>           
+                      <p class="footer-description-1 hover-effect"><i class="fa-brands fa-whatsapp fa-sm footer-icon me-1"></i> +1 (877) 768-3334</p>           
                     </div>
                       <div>
                         <p class="footer-description-1 hover-effect"><i class="fa-regular fa-envelope fa-sm footer-icon me-1"></i > mail@example.com</p>
                       </div>
-                  </div>
-                  <div class="col-lg-2 col-md-6 col-12 align-self-start">
-                    <h5 class="footer-title">FOLLOR US</h5>
-                    <div class="icon-collection footer-icon-collection d-flex  ">
-                      <div class="nav-icons facebook-icon ms-0">
-                        <i class="fa-brands fa-facebook-f"></i>
+
+                      <h5 class="footer-title">FOLLOW US</h5>
+                      <div class="icon-collection footer-icon-collection d-flex  ">
+                        <div class="nav-icons facebook-icon ms-0">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="nav-icons twitter-icon ms-1">
+                          <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="nav-icons linkedin-icon ms-1"   >
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
                       </div>
-                      <div class="nav-icons twitter-icon ms-1">
-                        <i class="fa-brands fa-x-twitter"></i>
-                      </div>
-                      <div class="nav-icons linkedin-icon ms-1"   >
-                        <i class="fa-brands fa-linkedin-in"></i>
-                      </div>
-                    </div>
+                  </div>    
                   </div>
                 </div>
               </div>
@@ -635,36 +673,16 @@
              <!-- copyright -->
               <section class="copyright-section">
                 <div class="container">
-                  <d class="row justify-content-center">
-                    <div class="col-lg-6 col-md-12 d-flex justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                      <img src="assets/logo-footer.png" alt="" class="me-5">
-                      <p class="copyright">© Copyright 2025. All Rights Reserved.</p>
+                  <div class="row justify-content-center ">
+                    <div class="col-lg-12 col-md-12 d-flex justify-content-center  mb-3 mb-lg-0">
+                      <img src="assets/logicdomainnobackground.png" alt="" class="me-5">
+                      <p class="copyright">© 2018 Logic Domain. All Rights Reserved.</p>
                     </div>
-                    <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center pe-0">
-                      <p class="copyright-link "> <i class="fa-solid fa-greater-than fa-2xs me-1"></i> FAQ's</p>
-                      <p class="copyright-link"> <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Sitemap</p>
-                      <p class="copyright-link"> <i class="fa-solid fa-greater-than fa-2xs me-1"></i> Contact Us</p>
-                    </div>
-                  </d>
+                    
+                  </div>
                 </div>
               </section>
 
-        
-              <script>
-        
-                function toggleNav() {
-                  document.querySelector('.nav').classList.toggle('show');
-                }
-        
-                const topButton = document.querySelector('.top-button-link');
-                window.addEventListener('scroll', () => {
-                  if (window.pageYOffset > 200) {
-                    topButton.classList.add('active');
-                  } else {
-                    topButton.classList.remove('active');
-                  }
-                });
-              </script>
               
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
