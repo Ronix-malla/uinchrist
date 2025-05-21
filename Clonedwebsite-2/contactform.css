@@ -1,0 +1,71 @@
+:root {
+    /* font  */
+    --primary-font: "Poppins", arial, sans-serif;
+    --secondary-font: "Shadows Into Light", cursive;
+  
+    /* font-color */
+  
+    /* color */
+    --primary-color: #0088cc;
+    --secondary-color: #a41e22;
+  }
+
+.form-column {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;                         
+    background-color: #fff;
+    padding: 2rem !important;
+  }
+
+  .form-title{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .form-title-2{
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .form-description{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #777;
+  }
+  .form-label{
+    font-size: 14px !important;
+    color: #666666;
+  }
+
+  .btn-primary{
+    background-color: #F5F5F5 !important;
+    border: none !important;
+    color:black !important;
+  }
+  
+  .btn-primary {
+    background-color: #F5F5F5 !important;
+    border: none !important;
+    color: #666666 !important;
+    margin-left: 5px ;
+  }
+  
+  .btn-check:checked + .btn-primary {
+    border-bottom: 2px solid black !important;
+  }
+  
+  .contact-title{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .contact-detail{
+    font-size: 14px;
+    line-height: 24px;
+    color: #888;
+  }

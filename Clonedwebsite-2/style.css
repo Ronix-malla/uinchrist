@@ -49,17 +49,13 @@ hr {
   font-size: 12.6px;
   padding: 6px 10px;
   letter-spacing: -0.5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-.navicons {
-  padding-left: 20px;
-  margin-left: 10px;
+.navitem:hover {
+  color: black;
 }
-.navicons i {
-  font-size: 0.81rem;
-  padding: 6px 7px;
-  letter-spacing: -0.5px;
-  color: #777;
-}
+
 .vertical-line {
   width: 1px;
   height: 1rem;
@@ -151,6 +147,7 @@ header {
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
+  color: black;
 }
 
 .nav-icons:hover {
@@ -170,10 +167,10 @@ header {
   background-color: #0073b2;
 }
 .google-icon:hover {
-  background-color: 	#4285F4;
+  background-color: #4285f4;
 }
-.vimeo-icon:hover{
-  background-color: #3D95CE;
+.vimeo-icon:hover {
+  background-color: #3d95ce;
 }
 
 .req-demo-btn button {
@@ -438,8 +435,6 @@ header {
 
 /* about section */
 
-.about-section {
-}
 .about-section .container {
   display: flex;
   flex-direction: column;
@@ -518,6 +513,20 @@ header {
   animation-delay: 0s;
 }
 .about-section-2 .container .section-header .text-changing .word-1 {
+  animation-delay: 2s;
+}
+
+/* for difference section animation */
+.difference-section .container .section-header .text-changing {
+  width: 260px;
+}
+.difference-section .container .section-header .text-changing .word {
+  animation: rotateWord2 4s linear infinite;
+}
+.difference-section .container .section-header .text-changing .word-1 {
+  animation-delay: 0s;
+}
+.difference-section .container .section-header .text-changing .word-1 {
   animation-delay: 2s;
 }
 @keyframes rotateWord2 {
@@ -686,13 +695,50 @@ header {
 }
 .work-des {
   right: 369px;
-    top: 385px;
+  top: 385px;
   font-size: 30.8px;
 }
-
+/* difference section */
+.difference-section {
+  margin-top: 48px;
+}
+.difference-info h5 {
+  font-size: 18.9px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.difference-info p {
+  font-size: 14px !important;
+  line-height: 26px !important;
+  color: #777 !important;
+  margin-bottom: 24px !important;
+  opacity: 1 !important;
+}
+.difference-icon {
+  padding: 0.8rem;
+  align-self: start;
+  color: var(--primary-color);
+}
+.direction-line {
+  color: black;
+  opacity: 0.7 !important;
+  transition: all 0.2s ease-in-out;
+  font-weight: normal;
+  transform-origin: center;
+}
+.diff-col:hover .direction-line {
+  opacity: 1 !important;
+  color: var(--secondary-color);
+  transform: scale(1.05);
+  
+}
+.btn-div{
+  width: 100%;
+}
 /* feature section */
 
-sup{
+sup {
   font-size: 14.17px !important ;
 }
 .feature h1 {
@@ -972,7 +1018,7 @@ footer .row {
   font-size: 20.16px;
   line-height: 1.2;
   box-shadow: 0 4px 25px rgba(255, 255, 255, 0.4);
- }
+}
 
 .footer-title {
   font-size: 12.6px;
@@ -1006,7 +1052,6 @@ footer .row {
   color: #777;
   cursor: pointer;
   transition: all 0.3s linear;
-
 }
 
 .sub-title-footer:hover .footer-description {
@@ -1036,7 +1081,7 @@ footer .row {
 .linkedin-icon:hover {
   background-color: #0073b2;
 }
-.services p:hover{
+.services p:hover {
   text-decoration: underline !important;
   text-decoration-thickness: 1px !important;
 }
@@ -1108,7 +1153,7 @@ footer .row {
 .demo-section {
   margin-bottom: 0px;
 }
-.demo-title{
+.demo-title {
   font-size: 34px !important;
 }
 @media (max-width: 1500px) {
@@ -1119,24 +1164,22 @@ footer .row {
   }
 }
 @media (max-width: 1500px) {
-  .img-circular-container{
+  .img-circular-container {
     position: static;
     height: 157.48px;
     width: 157.48px;
   }
-  .circular-img-big-container{
+  .circular-img-big-container {
     height: 338px;
     width: 338px;
   }
-  .work-description{
+  .work-description {
     position: static;
-    
-    
   }
-  .work-des{
-    position:static;
+  .work-des {
+    position: static;
   }
-  .work-section{
+  .work-section {
     height: 100%;
   }
 
@@ -1150,13 +1193,11 @@ footer .row {
     height: auto;
     width: 100%;
   }
-  
 }
 @media (max-width: 1200px) {
-  .web-logo{
+  .web-logo {
     width: 120px !important;
-    
-  } 
+  }
 }
 
 @media (max-width: 990px) {
@@ -1172,13 +1213,13 @@ footer .row {
     margin-bottom: 1rem;
     line-height: 1.5;
   }
- 
+}
 @media (max-width: 850px) {
-  .circular-img-big-container{
+  .circular-img-big-container {
     height: 157.48px;
     width: 157.48px;
   }
-  }
+}
 
 @media (max-width: 765px) {
   .toogle-btn {
@@ -1188,8 +1229,8 @@ footer .row {
     width: 493px !important;
   }
 }
-@media (max-width: 500px){
-  .web-logo{
+@media (max-width: 500px) {
+  .web-logo {
     width: 120px;
     margin-top: 15px;
   }
