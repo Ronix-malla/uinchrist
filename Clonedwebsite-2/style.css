@@ -581,6 +581,7 @@ header {
   height: 56px;
   width: 116px;
   animation: Bouncing 1.5s linear infinite alternate;
+  z-index: -1;
 }
 .img-sun {
   height: 56px;
@@ -1291,6 +1292,10 @@ footer .row {
   .difference-section .container .section-header .text-changing {
     width: 150px;
   }
+  .main-title {
+  
+    letter-spacing: -1px;
+  }
 }
 @media (max-width: 500px) {
   .web-logo {
@@ -1300,8 +1305,19 @@ footer .row {
   .about-section-2 .container .section-header .text-changing {
     width: 110px;
   }
+  .toogle-btn {
+    width: 408px !important;
+  }
+  .card-body {
+    width: auto !important;
+  }
 }
-
+@media (max-width: 400px){
+  .toogle-btn {
+    width: 350px !important;
+    
+  }
+}
 /* animation */
 /* @keyframes ButtomTop {
   0% {
