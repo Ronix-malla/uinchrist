@@ -24,14 +24,16 @@ body {
 .container {
   width: 1064px !important;
 }
-
-/* navbar */
-nav {
-  padding: 19px 0;
-  background-color: var(--secondary-color);
-  margin-bottom: 50px;
+ul {
+  padding-left: 0;
+  list-style-type: none;
 }
-nav ul {
+/* navbar */
+header {
+  padding: 19px 0;
+  margin-bottom: 10px;
+}
+.header-list {
   list-style: none;
   display: inline-flex;
   gap: 1rem;
@@ -39,7 +41,7 @@ nav ul {
   margin: 0;
 }
 
-nav a {
+header a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -48,12 +50,15 @@ nav a {
   font-size: 1rem;
 }
 
-nav img {
+header img {
   width: 26px;
   height: 26px;
   margin-left: 11px;
 }
 
+.chapter-section{
+  margin:6rem 0;
+}
 .active-item {
   font-weight: 900;
   position: relative;
@@ -84,8 +89,36 @@ nav img {
 .hover-item:hover::after {
   width: 100%;
 }
+/* translation dropdown */
+.current-translation {
+  border: 2px solid var(--primary-color) !important;
 
-/* dropdown style */
+  border-radius: 6px;
+  position: relative;
+}
+.translation-status {
+  position: static;
+  padding: 6px 6px;
+  font-size: 10px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+.translation-title {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+.title-shortform {
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  line-height: 24px;
+  color: var(--primary-color);
+  
+}
 .btn-dropdown {
   background-color: transparent !important;
   color: #212529;
@@ -102,11 +135,14 @@ nav img {
   color: black;
   opacity: 1;
 }
-
 .btn-secondary.dropdown-toggle.show {
   color: #000 !important;
 }
-.dropdown-menu {
+
+
+/* book dropdown style */
+
+ .translation-dropdown {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   height: 300px;
@@ -114,36 +150,7 @@ nav img {
   padding: 10px;
 }
 
-.translation-title {
-  font-family: var(--primary-font);
-  font-size: 1rem;
-  line-height: 24px;
-  font-weight: 600;
-  margin-bottom: 4px;
-  color: #333;
-}
-.title-shortform {
-  font-family: var(--primary-font);
-  font-size: 0.9rem;
-  line-height: 24px;
-  color: var(--primary-color);
-  
-}
-.current-translation {
-  border: 2px solid var(--primary-color) !important;
-
-  border-radius: 6px;
-  position: relative;
-}
-.translation-status {
-  position: static;
-  padding: 6px 6px;
-  font-size: 10px;
-  color: white;
-  background-color: var(--primary-color);
-  border-radius: 20px;
-}
-.dropdown-item {
+.translation-dropdown .dropdown-item {
   background-color: #fff;
   border-radius: 10px;
   padding: 12px 16px;
@@ -155,9 +162,74 @@ nav img {
   align-items: flex-start;
   transition: background-color 0.2s ease;
 }
-.dropdown-item:hover {
+.translation-dropdown .dropdown-item:hover {
   background-color: #f1f1f1;
 }
+
+
+.section-header {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  padding-left: 0.5rem;
+  border-left: 5px solid var(--primary-color);
+}
+.dropdown-menu-custom {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 300px;
+
+}
+.scroll-section {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  padding-right: 2rem;
+}
+.scroll-section {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  padding-right: 2rem;
+}
+.two-column-list {
+  columns: 2;
+  column-gap: 1rem;
+}
+.current-testament ,
+.current-verse{
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 6px;
+}
+.current-testament::after{
+  content: "\f02e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 200; 
+  margin-left: 4px;
+}
+.current-testament:hover,
+.current-verse:hover{
+  color: var(--primary-color);
+  font-weight: bold;
+  background-color: white;
+  border-bottom: 2px solid white !important;
+}
+.book-dropdown .dropdown-item{
+  margin-bottom: 5px;
+  border: 2px solid white;
+  transition: all 0.4s ease;
+}
+.book-dropdown .dropdown-item:hover{
+  border-bottom: 2px solid var(--tertiary-color);
+}
+
 /* main section */
 .chap-info {
   position: relative;
