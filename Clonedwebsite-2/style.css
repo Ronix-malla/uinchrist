@@ -1244,6 +1244,13 @@ footer .row {
     margin-bottom: 1rem;
     line-height: 1.5;
   }
+  .review-background-img {
+  
+    width: 100% !important;
+    height: 300px;
+ 
+  }
+  
  
 }
 @media (max-width: 850px) {
