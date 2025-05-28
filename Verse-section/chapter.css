@@ -10,6 +10,9 @@ html {
 body {
   font-size: 1rem;
 }
+a{
+  text-decoration: none;
+}
 
 :root {
   /* font  */
@@ -268,15 +271,24 @@ header img {
   border-radius: 20px;
   background-color: var(--primary-color);
   color: white;
-  height: 37px;
-  width: 151px;
+  padding: 0.4rem 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
+.Read-btn{
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.Read-btn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
 .currently-reading {
-  border: 1px solid black;
+  border: 1.3px solid rgb(192, 183, 183);
 }
 
 .book-items li {
@@ -286,4 +298,55 @@ header img {
 .book-items h6 {
   margin-bottom: 0;
   line-height: 36px;
+}
+
+/* toogle style book */
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle-content.active {
+  max-height: 500px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toggle-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+
+}
+
+.toggle-header::after {
+  content: '▸';
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.toggle-header.active::after {
+  transform: rotate(90deg);
+}
+
+/* breadcrumb-navigation */
+.breadcrumb-navigation {
+  margin: 1rem 0;
+}
+.breadcrumb-navigation a{
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color: var(--tertiary-color);
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.breadcrumb-navigation .active{
+  font-weight: 600 !important;
+  color: black;
+  background-color: #f7f7f7;
+  
 }
