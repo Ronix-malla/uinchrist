@@ -192,14 +192,8 @@ header {
 /* herosection */
 .hero-section {
   position: relative;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 40, 85, 0.9) 0%,
-    rgba(0, 40, 85, 0.85) 30%,
-    rgba(0, 40, 85, 0.8) 60%,
-    var(--primary-color) 100%
-  );
-  
+  background-color: rgba(0, 40, 85, 0.9);
+
   height: auto;
   width: 100%;
   /* height: 670px; */
@@ -390,9 +384,25 @@ header {
 
 /* hero-section btn */
 .hero-btn-section {
-  padding: 2.4rem 0;
-  background-color: var(--primary-color);
+  position: relative;
+  padding: 3rem 0;
+  background-image: url(assets/herobtnbackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 75px;
+  z-index: 1;
+}
+.hero-btn-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 136, 204, 0.6);
+  z-index: -1;
 }
 .hero-btn-section .container div h3 {
   /* font-size: 1.225rem; */
@@ -440,14 +450,13 @@ header {
   text-decoration-thickness: 1px !important;
 }
 
-.hero-img-wrapper{
+.hero-img-wrapper {
   position: relative;
   transform: translateY(-60px);
   animation: Bouncing 1.5s linear infinite alternate;
 }
-.hero-img-wrapper img{
+.hero-img-wrapper img {
   width: 100%;
-
 }
 /* about section */
 
@@ -723,23 +732,45 @@ header {
 .difference-section {
   margin-top: 48px;
 }
+.adv-counter {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 50% 20% 50% 50%;
+  padding: 1rem 1.5rem;
+  font-size: clamp(0.75rem, 5vw, 1rem);
+  font-weight: bold;
+  display: inline;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
 .diff-col {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09);
+  border-left: 0.5px solid #e0e0e0;
+  border-right: 0.5px solid #e0e0e0;
+  border-bottom: 0.5px solid #e0e0e0;
   padding: 0 1.5rem 1.5rem 1.5rem !important;
   border-radius: 1rem;
+  overflow: hidden;
   width: 365px !important;
 
   position: relative;
 }
+.difference-info {
+  margin-top: 1rem;
+}
 .difference-info h5 {
   font-size: clamp(1rem, 1.845vw, 1.18125rem);
+  color: var(--primary-color);
   margin-bottom: 4px;
   font-weight: 700;
   letter-spacing: -1px;
 }
 .difference-info p {
-  /* font-size: 14px !important; */
-  font-size: clamp(0.8rem, 1.82vw, 0.875rem);
+  font-size: clamp(0.8rem, 1.82vw, 0.875rem) !important;
   line-height: 26px !important;
   color: #777 !important;
   width: 100% !important;
@@ -747,7 +778,8 @@ header {
   margin-bottom: 8px !important;
 }
 .difference-icon {
-  padding: 0.8rem 0;
+  height: 221px;
+  overflow: hidden;
   align-self: start;
   color: var(--primary-color);
 }
@@ -757,6 +789,8 @@ header {
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  transition: all 0.5s ease;
+
 }
 .direction-line {
   position: absolute;
@@ -774,6 +808,14 @@ header {
 }
 .diff-col:hover .direction-line {
   width: 4rem !important;
+}
+.diff-col:hover .difference-icon img {
+  transform: scale(1.1);
+  
+  overflow: hidden;
+}
+.diff-col:hover .adv-counter {
+  transform: translateX(70px);
 }
 .btn-div {
   width: 100%;
@@ -1166,6 +1208,11 @@ footer .row {
 
 /* demo section */
 .demo-section {
+  position: relative;
+  z-index: 0;
+  background-image: url(assets/footerbackground.jpg);
+}
+.demo-section {
   margin-bottom: 0px;
 }
 .demo-title {
@@ -1263,7 +1310,6 @@ footer .row {
     width: 100% !important;
     height: 300px;
   }
-
 }
 @media (max-width: 850px) {
   .circular-img-big-container {
@@ -1295,7 +1341,6 @@ footer .row {
   .hero-section {
     padding: 5rem 0rem;
   }
-  
 }
 
 @media (max-width: 600px) {
