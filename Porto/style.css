@@ -567,7 +567,6 @@ header {
 
 .img-circular-container img {
   border-radius: 50%;
-
   object-fit: cover;
 }
 .img-circular-container::after {
