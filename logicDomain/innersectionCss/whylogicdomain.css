@@ -12,7 +12,7 @@
   .implement-section-top {
     color: white;
     position: relative;
-    padding: 3.5rem 0;
+    padding: clamp(3rem, 7vw, 7rem) 0;
     background-image: url("../assets/serviceInner/longterm.jpg");
     background-attachment: scroll;
     background-position: center;
@@ -73,23 +73,4 @@
     color: #626262;
     font-family: "Roboto", sans-serif;
     margin-bottom: 1rem;
-  }
-  
-  .highlighted {
-    font-weight: 600;
-    color: #626262;
-    position: relative;
-    display: inline;
-    z-index: 1;
-  }
-  .highlighted::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0.1em;
-    width: 100%;
-    height: 0.6rem;
-    background-color: var(--secondary-color);
-    opacity: 0.3;
-    z-index: -1;
   }

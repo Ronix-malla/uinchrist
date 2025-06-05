@@ -31,6 +31,38 @@ const hiddenElements_2 = document.querySelectorAll(".hidden-2");
 hiddenElements_2.forEach((el) => observer_2.observe(el));
 
 
+// for toogle right to left 
+const observer_3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("toogle-left-show");
+      // } else {
+      //   entry.target.classList.remove("show-2");
+      // } //optional if u want animation when u return to the same point then use this.
+    }
+  });
+});
+
+const toogleButton_1 = document.querySelectorAll(".toogle-right");
+toogleButton_1.forEach((el) => observer_3.observe(el));
+
+
+//for toogle left to right
+const observer_4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("toogle-right-show");
+      // } else {
+      //   entry.target.classList.remove("show-2");
+      // } //optional if u want animation when u return to the same point then use this.
+    }
+  });
+});
+const toogleButton_2 = document.querySelectorAll(".toogle-left");
+toogleButton_2.forEach((el) => observer_4.observe(el));
+
 // top button 
 function toggleNav() {
   document.querySelector('.nav').classList.toggle('show');
