@@ -223,38 +223,82 @@
             <hr>
         </div>
 
+        <!-- section switch -->
+        <div class="container mt-5">
+          <div class="row tab-container">
+            <div class="col-lg-2 col-3 align-self-center ps-0">
+              <div class="tab active " data-tab="Easy-tab">
+              <p class="mb-0"><i class="fa-solid fa-face-smile me-1"></i> Easy to Use</p> 
+              </div>
+            </div>
+            <div class="col-lg-2 col-3 col-md-2 align-self-center ps-0">
+              <div class="tab" data-tab="Live-tab">
+                <p class="mb-0"><i class="fa-solid fa-bolt me-1"></i>Go Live Quick</p>
+              </div>
+            </div> 
+            <div class="col-lg-2 col-md-3 col-3 align-self-center ps-0">
+              <div class="tab" data-tab="Browser-tab">
+                <p class="mb-0">
+                  <i class="fa-solid fa-globe me-1"></i>
+                  Access via Browser
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 align-self-center ps-0 mt-2 mt-md-0">
+              <div class="tab" data-tab="Grow-tab">
+                <p class="mb-0">
+                  <i class="fa-solid fa-seedling me-1"></i>
+                  Ability to Grow
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 align-self-center ps-0 mt-2 mt-md-0">
+              <div class="tab" data-tab="Reporting-tab">
+                <p class="mb-0">
+                  <i class="fa-solid fa-file-invoice me-1"></i>
+                  Robust Reporting
+                </p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
         <!-- more detail -->
          <div class="scroll-zone">
-           <div class="container implementation-detail more-detail ">
-               <div class="row ">
-                   <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 toogle-left">
-                       <div class="category_tab align-self-end">
-                           Easy to Use
-                       </div>
-                       <h4 class="moredetail_title">
-                        Easy to Use</h4>
-                       <p class="moredetail_description">
-                        Compass™ is straightforward and intuitive Construction Management software for Owners, Program Managers and all other Stakeholders of projects. 
-                       </p>
-                       <p class="moredetail_description">
-                        Users
-                        <span class="highlighted">
-                            move effortlessly and seamlessly 
-                        </span> from screen-to-screen, maximizing employee productivity and reducing costs.
-                       </p>
-
-                       
-                   </div>
-                   <div class="col-lg-6 col-md-6 order-md-2 order-1 toogle-right">
-                       <div class="image-container">
-                           <img src="assets/solutionInner/easy-to-use.jpg" alt="">
-                       </div>
-   
-                   </div>
-                   
-               </div>
-           </div>
+          <div class="tab-content active" id="Easy-tab">
+            <div class="container implementation-detail more-detail ">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 toogle-left">
+                        <!-- <div class="category_tab align-self-end">
+                            Easy to Use
+                        </div> -->
+                        <h4 class="moredetail_title">
+                         Easy to Use</h4>
+                        <p class="moredetail_description">
+                         Compass™ is straightforward and intuitive Construction Management software for Owners, Program Managers and all other Stakeholders of projects. 
+                        </p>
+                        <p class="moredetail_description">
+                         Users
+                         <span class="highlighted">
+                             move effortlessly and seamlessly 
+                         </span> from screen-to-screen, maximizing employee productivity and reducing costs.
+                        </p>
+ 
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-md-2 order-1 toogle-right">
+                        <div class="image-container">
+                            <img src="assets/solutionInner/easy-to-use.jpg" alt="">
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
            <!-- 2 -->
+           <div class="tab-content " id="Live-tab">
            <div class="container implementation-detail more-detail">
                <div class="row hidden-2">
                    
@@ -266,10 +310,10 @@
                    </div>
                    
                    <div class="col-lg-6 col-md-6  mt-4 mt-lg-0 description_container toogle-right">
-                       <div class="category_tab align-self-start">
+                       <!-- <div class="category_tab align-self-start">
                            
                         Go Live Quick
-                       </div>
+                       </div> -->
                        <h4 class="moredetail_title">
                         Go Live Quick</h4>
                        <p class="moredetail_description">
@@ -288,13 +332,15 @@
                    </div>
                </div>
            </div>
+            </div>
            <!-- 3 -->
+           <div class="tab-content " id="Browser-tab">
            <div class="container implementation-detail more-detail">
                <div class="row ">
                     <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 toogle-left">
-                       <div class="category_tab align-self-end">
+                       <!-- <div class="category_tab align-self-end">
                         Access via Browser
-                       </div>
+                       </div> -->
                        <h4 class="moredetail_title">
                         Access via Browser</h4>
                        <p class="moredetail_description">
@@ -303,7 +349,7 @@
                        </p>
 
                        <p class="moredetail_description">
-                        There are no installs whatsoever, thus creating <span class="highlighted">ease of </span><span class="highlighted"> accessibility</span> and reducing maintenance costs.
+                        There are no installs whatsoever, thus creating <span class="highlighted">ease of </span> <span class="highlighted"> accessibility</span> and reducing maintenance costs.
                        </p>
                        <p class="moredetail_description">
                         The entire Compass application can be <span class="highlighted">securely accessed</span><span class="highlighted"> from anywhere,</span>  at anytime, from any computer or mobile device.
@@ -319,7 +365,9 @@
                    
                </div>
            </div>
+            </div>
            <!-- 4 -->
+           <div class="tab-content " id="Grow-tab">
            <div class="container implementation-detail more-detail">
                <div class="row hidden-2">
                    
@@ -331,10 +379,10 @@
                    </div>
                    
                    <div class="col-lg-6 col-md-6  mt-4 mt-lg-0 description_container toogle-right">
-                       <div class="category_tab align-self-start">
+                       <!-- <div class="category_tab align-self-start">
                            
                         Ability to Grow
-                       </div>
+                       </div> -->
                        <h4 class="moredetail_title">
                             Access via Browser</h4>
                        <p class="moredetail_description">
@@ -358,13 +406,16 @@
                    </div>
                </div>
            </div>
+            </div>
            <!-- 5 -->
+           <div class="tab-content " id="Reporting-tab">
+
            <div class="container implementation-detail more-detail">
                <div class="row ">
                     <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 toogle-left">
-                       <div class="category_tab align-self-end">
+                       <!-- <div class="category_tab align-self-end">
                         Robust Reporting 
-                       </div>
+                       </div> -->
                        <h4 class="moredetail_title">
                         Robust Reporting and Analytics</h4>
                        <p class="moredetail_description">
@@ -380,6 +431,7 @@
                 </div>
                    
                </div>
+           </div>
            </div>
          </div>
 

@@ -16,12 +16,19 @@
 }
 .implement-section-top {
   color: white;
+  background-image: url(../assets/background_logicdomain.jpg);
   position: relative;
-  padding: 1rem 0;
+  background-size: cover;
+  padding: clamp(2rem, 5vw, 3rem) 0;
   background-color: rgba(0, 40, 85, 0.9);
   z-index: 1;
 }
-
+.tempest-image{
+  width: 80%;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
 .description-top {
     color: white;
     position: relative;
@@ -34,6 +41,7 @@
     margin-bottom: 75px;
     z-index: 1;
   }
+
   
   .description-top::after {
     content: "";
@@ -47,7 +55,7 @@
   }
 
 .description-top .SI_subtitle{
-    font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
     font-weight: 500;
     margin-bottom: 0.5rem;
     letter-spacing: -0.8px;
@@ -76,18 +84,9 @@
   opacity: 0.7;
   line-height: 1.5;
 }
-.tempest-image{
-    width: 95%;
-    height: 100%;
-    border-radius: 6px;
-    overflow: hidden;
-}
+
 
 /* detail */
-.implementation-detail {
-  margin-bottom: 75px;
-  margin-top: 75px;
-}
 .image-container img {
   position: relative;
   width: 100%;
@@ -119,8 +118,7 @@
 
 
 /* more detail */
-.more-detail {
-}
+
 .moredetail_title {
   font-size: clamp(1rem, 1.845vw, 1.18125rem);
   margin-bottom: 4px;

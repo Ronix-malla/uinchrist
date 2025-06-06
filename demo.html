@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <h2>Explore Our Services</h2>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="consulting">Support</div>
+      <div class="tab" data-tab="development">Development</div>
+      <div class="tab" data-tab="support">Support</div>
+    </div>
+
+    <div class="content-wrapper" id="tabContent">
+      <!-- Initial Content -->
+      <div class="text-content toogle-left">
+        <h3>Unmatched Customer Support</h3>
+        <p>
+          Our School customers will tell you that Logic Domain's level of
+          support is <span class="highlight">second-to-none.</span> They take
+          comfort in knowing that we are
+          <span class="highlight"> hands-on </span>
+          and immediately respond to questions, quickly provide answers, and
+          promptly resolve any and all issues.
+        </p>
+        <p>
+          We provides support via an online portal, phone, and e-mail to provide customers with multiple ways to conveniently contact us for prompt, easy Help Desk responses.
+        </p>
+      </div>
+      <div class="image-content toogle-right">
+        <img src="LogicDomain/assets/serviceInner/customersupport.jpg" alt="Expertise Image" />
+      </div>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const content = document.getElementById("tabContent");
+
+      const tabData = {
+        consulting: {
+          title: "Experience Counts",
+          text: `
+              <p>At Logic Domain, we employ staff who don’t just have <span class="highlight">Information Technology experience</span>, but also <span class="highlight">Program and Project Management experience</span> representing the Owners.</p>
+              <p>We assign you a dedicated project manager who works closely with you and provides complete visibility and updates every step of the way.</p>
+              <p>We’ll get you <span class="highlight">up and running quickly</span> and ensure that your employees are fully trained.</p>
+            `,
+          image: "expertise.png",
+        },
+        development: {
+          title: "Tailored Software Solutions",
+          text: `
+              <p>Our team delivers <span class="highlight">custom-built applications</span> designed to meet your unique needs. From planning to deployment, we follow a collaborative process.</p>
+              <p>We use the latest tech stacks to ensure <span class="highlight">performance, scalability, and security</span>.</p>
+            `,
+          image: "development.png",
+        },
+        support: {
+          title: "Reliable Support Services",
+          text: `
+              <p>Our support ensures that your systems remain <span class="highlight">secure and up-to-date</span>. We offer 24/7 monitoring, proactive maintenance, and fast issue resolution.</p>
+              <p>Count on us for <span class="highlight">peace of mind</span> and operational stability.</p>
+            `,
+          image: "support.png",
+        },
+      };
+
+      // Reusable observers (do not recreate each time)
+      const observerLeft = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("toogle-left-show");
+          }
+        });
+      });
+
+      const observerRight = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("toogle-right-show");
+          }
+        });
+      });
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+
+          const key = tab.getAttribute("data-tab");
+          const data = tabData[key];
+
+          // Update content with animation classes
+          content.innerHTML = `
+              <div class="text-content toogle-left">
+                <h3>${data.title}</h3>
+                ${data.text}
+              </div>
+              <div class="image-content toogle-right">
+                <img src="${data.image}" alt="${data.title}">
+              </div>
+            `;
+
+          // Select and observe new elements
+          const newLeft = content.querySelector(".toogle-left");
+          const newRight = content.querySelector(".toogle-right");
+
+          if (newLeft) observerRight.observe(newLeft);
+          if (newRight) observerLeft.observe(newRight);
+        });
+      });
+
+      // Observe initial content on page load
+      const initLeft = content.querySelector(".toogle-left");
+      const initRight = content.querySelector(".toogle-right");
+
+      if (initLeft) observerRight.observe(initLeft);
+      if (initRight) observerLeft.observe(initRight);
+    </script>
+  </body>
+</html>
