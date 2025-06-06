@@ -23,6 +23,16 @@
   background-color: rgba(0, 40, 85, 0.9);
   z-index: 1;
 }
+.implement-section-top::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 136, 204, 0.3);
+  z-index: -1;
+}
 .tempest-image{
   width: 80%;
   height: 100%;
