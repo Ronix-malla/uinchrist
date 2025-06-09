@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="active.css">
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -18,41 +19,53 @@
     <script defer src="app.js"></script>
 </head>
 <body>
-     <!-- top section -->
-     <div class="container">
-        <div class="row justify-content-end pt-3">
-          <div class="col-lg-5">
-            <div class="navigatebar d-flex justify-content-end">
-              
-              <!-- <div class="vertical-line"></div> -->
-              <div class="d-flex navitem align-items-center">
+    <!-- top section -->
+    <div class="container">
+      <div class="row pt-3 align-items-center">
+        <div class="col-lg-6">
+          <div class="navigatebar d-flex ">
+            
+            <!-- <div class="vertical-line"></div> -->
+            <div class="d-flex navitem align-items-center justify-content-">
+              <div class="d-flex">
                 <i class="fa-solid fa-phone mt-1 me-2"></i>
                 <p class="m-0">+1 (877) 768-3334</p>
-  
-                <div class="icon-collection d-flex  align-items-center">
-                  <div class="nav-icons facebook-icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </div>
-                  
-                  <div class="nav-icons google-icon">
-                    <i class="fa-brands fa-google"></i>
-                  </div>
-                  <div class="nav-icons vimeo-icon">
-                    <i class="fa-brands fa-vimeo-v"></i>
-                  </div>
-                  <div class="nav-icons twitter-icon">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </div>
-                  <div class="nav-icons linkedin-icon"   >
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </div>
               </div>
-              </div>
-  
+
             </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <div class="navigatebar d-flex ">
+            
+            <!-- <div class="vertical-line"></div> -->
+            <div class="d-flex navitem align-items-center justify-content-">
+
+              <div class="icon-collection d-flex ">
+                <div class="nav-icons facebook-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                
+                <div class="nav-icons google-icon">
+                  <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="nav-icons twitter-icon">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="nav-icons vimeo-icon">
+                  <i class="fa-brands fa-vimeo-v"></i>
+                </div>
+                <div class="nav-icons linkedin-icon"   >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            </div>
+
           </div>
         </div>
       </div>
+    </div>
   
       <!-- navbar  -->
       <header>
@@ -121,7 +134,7 @@
                     <!-- SERVICES -->
                     <li class="nav-item dropdown">
                       <a
-                        class="nav-link dropdown-toggle"
+                        class="nav-link dropdown-toggle nav-active"
                         href="#"
                         id="servicesDropdown"
                         role="button"
@@ -247,8 +260,8 @@
          <div class="scroll-zone">
           <div class="tab-content active" id="support-tab">
             <div class="container implementation-detail more-detail ">
-                <div class="row ">
-                    <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 toogle-left">
+                <div class="row description-active">
+                    <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 move-down">
                         <!-- <div class="category_tab align-self-end">
                             Support
                         </div> -->
@@ -265,7 +278,7 @@
                         </p>
  
                     </div>
-                    <div class="col-lg-6 col-md-6 order-md-2 order-1 toogle-right">
+                    <div class="col-lg-6 col-md-6 order-md-2 order-1 move-up pe-lg-0 img-column">
                         <div class="image-container">
                             <img src="assets/serviceInner/customersupport.jpg" alt="">
                         </div>
@@ -281,14 +294,14 @@
               <div class="container implementation-detail more-detail">
                   <div class="row hidden-2">
                       
-                      <div class="col-lg-6 col-md-6 toogle-left">
+                      <div class="col-lg-6 col-md-6 move-down ps-lg-0 img-column">
                           <div class="image-container">
                               <img src="assets/serviceInner/training.jpg" alt="">
                           </div>
       
                       </div>
                       
-                      <div class="col-lg-6 col-md-6  mt-4 mt-lg-0 description_container toogle-right">
+                      <div class="col-lg-6 col-md-6  mt-4 mt-lg-0 description_container move-up">
                           <!-- <div class="category_tab align-self-start">
                               Training
                           </div> -->
@@ -312,7 +325,7 @@
             <div class="tab-content" id="education-tab">
               <div class="container implementation-detail more-detail">
                   <div class="row ">
-                       <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 toogle-left">
+                       <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 description_container order-2 order-md-1 move-down">
                           <!-- <div class="category_tab align-self-end">
                               Continuing Education
                           </div> -->
@@ -324,7 +337,7 @@
                            Our <span class="highlighted">entire team is well-versed</span>in working with the Compass™, Navigator™, Beacon™, Tempest™ data analytics and reporting module. Some of our trainers and support staff were once actual Logic Domain users when they worked at client entities.
                           </p>
                       </div>
-                      <div class="col-lg-6 col-md-6 toogle-right order-md-2 order-1">
+                      <div class="col-lg-6 col-md-6 move-up order-md-2 order-1 pe-lg-0 img-column">
                        <div class="image-container">
                            <img src="assets/serviceInner/Continuing-Education.jpg" alt="">
                        </div>

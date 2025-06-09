@@ -1,0 +1,9 @@
+.nav-active{
+    background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 6px ;
+}
+
+.nav-active:hover{
+    border-radius: 6px 6px 0 0;
+}

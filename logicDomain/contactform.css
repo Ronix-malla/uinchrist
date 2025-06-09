@@ -8,8 +8,35 @@
     /* color */
     --primary-color: #0088cc;
     --secondary-color: #a41e22;
+    --tertiary-color: #feca12;
   }
 
+/* top section */
+.implement-section-top {
+  color: white;
+  position: relative;
+  padding: clamp(3rem, 7vw, 6rem) 0;
+
+  background-image: url("assets/contactUs.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 75px;
+  z-index: 1;
+}
+
+.implement-section-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 136, 204, 0.6);
+  z-index: -1;
+}
+  /* form */
 .form-column {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     border-radius: 8px;                         
@@ -25,7 +52,6 @@
   }
   .form-title-2{
     font-size: 20px;
-    line-height: 42px;
     font-weight: 600;
     color: var(--primary-color);
   }
@@ -51,19 +77,31 @@
     border: none !important;
     color: #666666 !important;
     margin-left: 5px ;
+    border-bottom: 3px solid transparent !important;
   }
   
   .btn-check:checked + .btn-primary {
-    border-bottom: 2px solid black !important;
+    border-bottom: 3px solid var(--tertiary-color) !important;
   }
   
   .contact-title{
+    position: relative;
     font-size: 14px;
     color: #666666;
     font-weight: 600;
     line-height: 24px;
+    display: inline-block;
   }
+  .contact-title::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--tertiary-color);
+    bottom: -2px;
+    left: 0;
 
+  }
   .contact-detail{
     font-size: 14px;
     line-height: 24px;

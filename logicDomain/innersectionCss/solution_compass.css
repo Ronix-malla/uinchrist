@@ -28,7 +28,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 136, 204, 0.3);
+  background-color: rgba(0, 136, 204, 0.5);
   z-index: -1;
 }
 .tempest-image {
@@ -62,7 +62,7 @@
 }
 
 .description-top .SI_subtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 500;
   margin-bottom: 0.5rem;
   letter-spacing: -0.8px;
