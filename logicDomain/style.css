@@ -1330,6 +1330,9 @@ footer .row {
     width: 100% !important;
     height: 300px;
   }
+  .req-demo-btn button{
+    margin-top: 0.5rem;
+  }
 }
 @media (max-width: 850px) {
   .circular-img-big-container {
