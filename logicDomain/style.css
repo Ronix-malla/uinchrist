@@ -497,7 +497,7 @@ header {
   padding: 6.44px 8px;
   background-color: var(--primary-color);
   width: 150px;
-  height: 55px;
+  height: 51px;
   overflow: hidden;
   vertical-align: middle;
   margin-top: 2px;
@@ -886,7 +886,7 @@ sup {
   font-weight: 400;
   margin-bottom: 2rem;
   margin-left: 1rem;
-  padding-bottom: 1.5rem; 
+  padding-bottom: 1.5rem;
 }
 
 .difference-title h1::before {
@@ -1427,8 +1427,6 @@ footer .row {
     justify-content: center !important;
     padding-top: 5px;
   }
-
-  
 }
 
 @media (max-width: 600px) {
@@ -1745,6 +1743,6 @@ footer .row {
   justify-content: start;
 }
 
-.img-column{
+.img-column {
   padding: 1rem !important;
 }
