@@ -168,7 +168,6 @@ header {
   display: block;
   margin-top: 0;
   border: none;
-
   border-top-left-radius: 0;
   border-top: 3px solid var(--primary-color);
   background-color: #faf9f9;
@@ -856,6 +855,7 @@ sup {
   font-weight: 400;
   margin-bottom: 2rem;
   margin-left: 1rem;
+
 }
 
 .feature h1::before {
@@ -1393,6 +1393,19 @@ footer .row {
   .req-demo-btn button {
     margin-top: 0.5rem;
   }
+  .nav-item.dropdown:hover .dropdown-menu {
+    border-radius: 0 0 6px 6px !important;
+
+
+  }
+  .dropdown-menu .dropdown-item {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 500px !important;
+  }
+  .web-logo{
+    margin-top: 1rem !important;
+  }
 }
 @media (max-width: 850px) {
   .circular-img-big-container {
@@ -1628,7 +1641,7 @@ footer .row {
 }
 
 .IS_title {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 0.05em;
