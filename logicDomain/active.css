@@ -1,6 +1,19 @@
+:root {
+  /* font  */
+  --primary-font: "Poppins", arial, sans-serif;
+  --secondary-font: "Shadows Into Light", cursive;
+
+  /* font-color */
+
+  /* color */
+  --primary-color: #0972b7;
+  --secondary-color: #a41e22;
+  --tertiary-color: #feca12;
+}
+
+
 .nav-active{
-    background-color: var(--primary-color) !important;
-  color: white !important;
+  color: var(--primary-color) !important;
   border-radius: 6px ;
 }
 
