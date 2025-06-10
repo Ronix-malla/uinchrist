@@ -15,6 +15,7 @@
 .nav-active{
   color: var(--primary-color) !important;
   border-radius: 6px ;
+  font-weight: 700 !important;
 }
 
 .nav-active:hover{

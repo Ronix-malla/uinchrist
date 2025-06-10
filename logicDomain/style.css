@@ -39,7 +39,7 @@ hr {
   /* color */
   --primary-color: #0972b7;
   --secondary-color: #a41e22;
-  --tertiary-color: #fcda60;
+  --tertiary-color: #FECA12;
 }
 
 .highlighted {
@@ -147,8 +147,8 @@ header {
 
 .nav-link {
   font-size: 14px !important;
-  font-weight: 700 !important;
-  color: #4a5568 !important;
+  font-weight: 600 !important;
+  color: #8f9094 !important;
   padding: 8px 16px !important;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -1691,7 +1691,6 @@ footer .row {
   border: 2px solid #f2f5fa;
   border-bottom: 0 solid #f2f5fa;
   border-radius: 4px;
-  margin-bottom: 5px;
   justify-content: center;
   transition: padding 0.3s ease, margin-bottom 0.3s ease,
     background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
