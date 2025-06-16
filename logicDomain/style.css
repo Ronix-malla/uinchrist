@@ -14,6 +14,7 @@ body {
   font-size: 1rem;
   font-family: "Poppins", arial, sans-serif !important;
   overflow-x: hidden;
+  background-color: #fcfaf9 !important;
 }
 a {
   color: white !important;
@@ -39,7 +40,7 @@ hr {
   /* color */
   --primary-color: #0972b7;
   --secondary-color: #a41e22;
-  --tertiary-color: #FECA12;
+  --tertiary-color: #feca12;
 }
 
 .highlighted {
@@ -92,6 +93,7 @@ hr {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 /* top banner  */
+
 .navitem i {
   font-size: 0.81rem;
 }
@@ -244,8 +246,11 @@ header {
 /* herosection */
 .hero-section {
   position: relative;
-  background-color: var(--primary-color);
-  /* background-image: url(assets/background_logicdomain.jpg); */
+  background-image: url(assets/herobtnbackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
   background-size: cover;
   padding: 10rem 5rem;
@@ -254,14 +259,15 @@ header {
   align-items: center;
   overflow: hidden;
 }
+
 .hero-section::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.3);
+  height: 100%;
+  background: rgba(0, 136, 204, 0.7);
   z-index: 1;
 }
 .hero-section .container {
@@ -435,7 +441,7 @@ header {
 .hero-btn-section {
   position: relative;
   padding: 3rem 0;
-  background-image: url(assets/herobtnbackground.jpg);
+  background: linear-gradient(to bottom, #0972b7, #0b8fd8);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -443,16 +449,16 @@ header {
   margin-bottom: 75px;
   z-index: 1;
 }
-.hero-btn-section::after {
+/* .hero-btn-section::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 136, 204, 0.6);
+  background: rgba(0, 136, 204, 0.5);
   z-index: -1;
-}
+} */
 .hero-btn-section .container div h3 {
   /* font-size: 1.225rem; */
   font-size: clamp(1.375rem, 3.32vw, 2.125rem);
@@ -501,7 +507,6 @@ header {
   vertical-align: middle;
   margin-top: 2px;
 }
-
 
 .text-changing .word {
   position: absolute;
@@ -749,7 +754,18 @@ header {
 /* difference section */
 .difference-section {
   margin-top: 48px;
+  background-image: linear-gradient(
+      to top,
+      #fcfaf9 0%,
+      rgba(252, 250, 249, 0) 40%
+    ),
+    linear-gradient(to bottom, #fcfaf9 0%, rgba(252, 250, 249, 0) 50%),
+    url(assets/abstractbackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .adv-counter {
   position: absolute;
   right: 5px;
@@ -767,9 +783,7 @@ header {
 }
 .diff-col {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  /* border-left: 0.5px solid #e0e0e0;
-  border-right: 0.5px solid #e0e0e0;
-  border-bottom: 0.5px solid #e0e0e0; */
+  background-color: white;
   padding: 0 1.5rem 1.5rem 1.5rem !important;
   border-radius: 6px;
   overflow: hidden;
@@ -855,7 +869,6 @@ sup {
   font-weight: 400;
   margin-bottom: 2rem;
   margin-left: 1rem;
-
 }
 
 .feature h1::before {
@@ -1292,6 +1305,16 @@ footer .row {
   z-index: 0;
   background-image: url(assets/footerbackground.jpg);
 }
+.demo-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 136, 204, 0.5);
+  z-index: -1;
+}
 .demo-section {
   margin-bottom: 0px;
 }
@@ -1395,15 +1418,13 @@ footer .row {
   }
   .nav-item.dropdown:hover .dropdown-menu {
     border-radius: 0 0 6px 6px !important;
-
-
   }
   .dropdown-menu .dropdown-item {
     white-space: normal;
     word-wrap: break-word;
     max-width: 500px !important;
   }
-  .web-logo{
+  .web-logo {
     margin-top: 1rem !important;
   }
 }
