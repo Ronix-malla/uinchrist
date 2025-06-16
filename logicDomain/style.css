@@ -282,10 +282,11 @@ header {
   letter-spacing: -0.9px;
 }
 .main-title {
+  position: relative;
+  z-index: 2;
   font-size: 51px;
   font-size: clamp(1.575rem, 5vw, 2.7125rem);
   font-weight: bold;
-  /* letter-spacing: -1px; */
 }
 .hero-description {
   font-size: 16.8px;
@@ -1493,7 +1494,6 @@ footer .row {
     width: 150px;
   }
   .main-title {
-    /* letter-spacing: -1px; */
   }
   .long-dropdown-menu .dropdown-item {
     font-size: 12px !important;
