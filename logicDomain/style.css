@@ -24,12 +24,10 @@ hr {
   border: none;
   height: 2px;
   background-color: #ccc;
-  margin: 1rem 0;
+  margin: 0 1rem 0 !important;
   max-width: 100%;
 }
-.horizontalline hr {
-  margin: 48px 0;
-}
+
 :root {
   /* font  */
   --primary-font: "Poppins", arial, sans-serif;
@@ -447,7 +445,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 75px;
   z-index: 1;
 }
 /* .hero-btn-section::after {
@@ -485,11 +482,11 @@ header {
   content: "";
   position: absolute;
   top: 0;
-  left: 60px;
-  width: 80%;
+  left: 0;
+  width: 100%;
   height: 100%;
   border-radius: 29%;
-  filter: blur(180px);
+  filter: blur(150px);
   background-color: black;
   z-index: 1;
 }
@@ -498,6 +495,29 @@ header {
   position: inherit;
   z-index: 10;
 }
+/* main feature container */
+.main-feature-container {
+  position: relative;
+  z-index: 1;
+}
+
+.main-feature-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(assets/blue-wavy-shape-background.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.15;
+
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* about section */
 
 .about-section .container {
@@ -511,6 +531,7 @@ header {
   letter-spacing: -1px;
   margin-bottom: 32px;
   color: #000;
+  margin-top: 75px;
 }
 
 .text-changing {
@@ -771,7 +792,8 @@ header {
 /* difference section */
 .difference-section {
   margin-top: 48px;
-  background-image: linear-gradient(
+  position: relative;
+  /* background-image: linear-gradient(
       to top,
       #fcfaf9 10%,
       rgba(252, 250, 249, 0) 50%
@@ -782,8 +804,39 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
-
+.difference-section::before {
+  content: "";
+  position: absolute;
+  top: -509px;
+  left: 0px;
+  background-image: 
+  linear-gradient(to left, #fcfaf9 20%, rgba(252, 250, 249, 0) 50%),
+  url(assets/copy-3.png);
+  height: 100%;
+  width: 400px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.difference-section::after {
+  content: "";
+  position: absolute;
+  bottom: -280px;
+  right: 0;
+  background-image:
+    linear-gradient(to bottom, #fcfaf9 25%, rgba(252, 250, 249, 0) 50%),
+    url(assets/shape-1.png);
+  height: 100%;
+  width: 720px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  z-index: -1;
+}
 .adv-counter {
   position: absolute;
   right: 5px;
@@ -873,6 +926,7 @@ header {
 /* feature section */
 .feature-section {
   position: relative;
+  padding-bottom: 1rem;
 }
 sup {
   font-size: clamp(0.8rem, 1.38vw, 0.885rem) !important ;
@@ -981,6 +1035,8 @@ sup {
   margin-bottom: 2rem;
 }
 .feature-img-wrapper {
+  display: flex;
+  justify-content: center;
   position: relative;
   transform: translateY(-60px);
   animation: Bouncing 1.5s linear infinite alternate;
@@ -990,6 +1046,7 @@ sup {
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
+
 /* about section 2 */
 
 .about-section-2 h4 {
@@ -1459,6 +1516,15 @@ footer .row {
     width: 190px;
   }
 }
+@media (max-width: 700px) {
+  .main-feature-container::before {
+    display: none;
+  }
+  .difference-section::after, 
+  .difference-section::before {
+    display: none;
+  }
+}
 
 @media (max-width: 765px) {
   .toogle-btn {
@@ -1470,7 +1536,7 @@ footer .row {
   .diff-col {
     width: 100% !important;
   }
-  .about-section-2 .container .section-header .text-changing {
+  .aout-section-2 .container .section-heder .text-changng {
     width: 115px;
   }
   .hero-section {
