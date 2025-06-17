@@ -726,17 +726,17 @@ header {
 .difference-section::after {
   content: "";
   position: absolute;
-  bottom: -280px;
+  bottom: -193px;
   right: 0;
   background-image:
     linear-gradient(to bottom, #fcfaf9 25%, rgba(252, 250, 249, 0) 50%),
     url(assets/shape-1.png);
   height: 100%;
-  width: 720px;
+  width: 820px;
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  opacity: 0.6;
+  opacity: 0.5;
   z-index: -1;
 }
 /* .bg-shape-extra{
