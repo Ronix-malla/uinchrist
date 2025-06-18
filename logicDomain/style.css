@@ -578,6 +578,20 @@ header {
   display: flex;
   flex-direction: column;
 }
+.background-img-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url(assets/background4.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: -1;
+  pointer-events: none;
+}
 .section-header {
   font-size: 2.01rem;
   font-size: clamp(1.3rem, 3.2vw, 2.01rem);
@@ -736,25 +750,12 @@ header {
 }
 /* difference section */
 .difference-section {
-  margin-top: 48px;
+  padding-top: 48px;
   position: relative;
+  background: linear-gradient(to bottom, #eff6fe 0%, #eff6fe 50%, #fcfaf9 100%);
   z-index: 0;
 }
-/* .difference-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 110px;
-  transform: translateY(-520px);
-  background-image:url(assets/arrow.jpg);
-  height: 100%;
-  width: 220px;
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  z-index: 0;
-} */
+
 /* .difference-section::after {
   content: "";
     position: absolute;
@@ -772,7 +773,7 @@ header {
 } */
 .bg-shape-extra{
   position: absolute;
-  top: -180px;
+  top: -130px;
   left: 100px;
   background-image:url(assets/arrow.jpg);
   height: 500px;
@@ -1434,12 +1435,15 @@ footer .row {
   .bg-shape-extra{
     width: 180px;
   }
+  .background-img-1{
+    display: none;
+  }
  
 }
 @media (max-width: 1090px){
   .bg-shape-extra{
     transform: rotate(30deg);
-    top: -230px;
+    top: -181px;
     width: 150px;
   }
 }
