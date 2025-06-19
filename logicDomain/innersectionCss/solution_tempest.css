@@ -9,6 +9,9 @@
   --primary-color: #0088cc;
   --secondary-color: #a41e22;
 }
+section{
+  position: relative;
+}
 
 .primary-btn:hover i {
   animation: fa-bounce 1s infinite;

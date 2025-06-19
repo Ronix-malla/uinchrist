@@ -27,7 +27,9 @@ hr {
   margin: 0 1rem 0 !important;
   max-width: 100%;
 }
-
+section{
+  position: relative;
+}
 :root {
   /* font  */
   --primary-font: "Poppins", arial, sans-serif;
@@ -253,8 +255,8 @@ header {
 .linkedin-icon i{
   color: #0073b2;
 }
-.nav-icons i:hover{
-  color: white;
+.nav-icons:hover i{  
+  color: white !important;
 }
 
 .facebook-icon:hover {
@@ -1776,8 +1778,13 @@ footer .row {
 .more-detail .description-active {
   border-radius: 0 6px 6px 0 !important;
 }
+section .implementation-detail {
+  position:relative;
+  padding: 75px 0;
+}
 .implementation-detail {
-  margin-bottom: 75px;
+  position:relative;
+  padding-bottom: 75px;
 }
 .image-container img {
   position: relative;
@@ -1868,4 +1875,27 @@ footer .row {
 
 .img-column {
   padding: 1rem !important;
+}
+.description-top{
+  margin-bottom: 0;
+}
+
+/* background */
+.top-background{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12%;
+  height: auto;
+  opacity: 0.1;
+  z-index: -1;
+}
+.btm-background{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 13%;
+  height: auto;
+  opacity: 0.1;
+  z-index: -1;
 }
