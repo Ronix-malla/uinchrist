@@ -47,6 +47,21 @@
   margin-bottom: 75px;
   margin-top: 75px;
 }
+.arrow2-01{
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  transform: rotate(15deg);
+  background-image: url(../assets/arrow2-01.png);
+  height: 120px;
+  width: 100px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+}
+
 .image-container img {
   position: relative;
   width: 100%;
@@ -61,4 +76,13 @@
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
 }
-
+@media (max-width: 1460px) {
+  .arrow2-01{
+    left: 30px;
+  }
+}
+@media (max-width: 1366px) {
+  .arrow2-01{
+    display: none;
+  }
+}

@@ -19,11 +19,14 @@ section{
 }
 .implement-section-top {
   color: white;
-  background-image: url(../assets/background_logicdomain.jpg);
   position: relative;
+  background-image: url(../assets/solutionInner/tempesthomebannerbg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: clamp(2rem, 5vw, 3rem) 0;
-  background-color: rgba(0, 40, 85, 0.9);
+  height: auto;
+  padding: clamp(3rem, 6vw, 4rem) 0;
   z-index: 1;
 }
 .implement-section-top::after{
@@ -31,26 +34,29 @@ section{
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  background-color: rgba(0, 136, 204, 0.5);
+  height: 100%;
+  background: rgba(0, 136, 204, 0.7);
   z-index: -1;
 }
 .tempest-image{
-  width: 80%;
+  width: 100%;
   height: 100%;
   border-radius: 6px;
   overflow: hidden;
+}
+.img-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-50px);
+  animation: Bouncing 1.5s linear infinite alternate;
 }
 .description-top {
     color: white;
     position: relative;
     padding: 2rem 0;
-    background-image: url("../assets/solutionInner/reporting.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--primary-color);
     margin-bottom: 75px;
     z-index: 1;
   }
@@ -94,7 +100,7 @@ section{
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
   font-weight: 100;
-  opacity: 0.7;
+  opacity: 0.85;
   line-height: 1.5;
 }
 
@@ -106,12 +112,9 @@ section{
   height: 100%;
   border-radius: 6px;
   overflow: hidden;
+  opacity: 0.8;
 }
-.img-wrapper {
-    position: relative;
-    transform: translateY(-60px);
-    animation: Bouncing 1.5s linear infinite alternate;
-  }
+
 .IS_title {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 700;
