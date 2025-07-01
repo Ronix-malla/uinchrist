@@ -179,7 +179,7 @@ header {
 
 .dropdown-item {
   color: #777 !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   font-size: clamp(13px, 1.2vw, 15px);
 }
 
