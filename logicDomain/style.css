@@ -151,7 +151,7 @@ header {
 
 .nav-link {
   font-size: 14px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   color: #8f9094 !important;
   padding: 8px 16px !important;
   border-top-left-radius: 6px;
@@ -179,7 +179,8 @@ header {
 
 .dropdown-item {
   color: #777 !important;
-  font-weight: normal !important;
+  font-weight: 300 !important;
+  font-size: clamp(13px, 1.2vw, 15px);
 }
 
 .dropdown-item:hover {
@@ -1823,7 +1824,7 @@ section .implementation-detail {
 /* content switching for inner section */
 /* section switch */
 .tab {
-  position:relative;
+  position: relative;
   font-size: clamp(0.2rem, 1.82vw, 0.875rem);
   cursor: pointer;
   color: #5c738a;
@@ -1860,23 +1861,21 @@ section .implementation-detail {
   border-radius: 6px 6px 0 0;
 }
 
-
 .tab-underline {
   position: absolute;
-  bottom: -14px; 
+  bottom: -14px;
   left: 0;
   width: 100%;
-  height: 14px;        
+  height: 14px;
   background-color: #fffdf9;
   transform: scaleY(0);
-  transform-origin: top; 
+  transform-origin: top;
   transition: transform 0.3s ease;
 }
 
 .tab.active .tab-underline {
-  transform: scaleY(1);  /* Animate the growth downwards */
+  transform: scaleY(1); /* Animate the growth downwards */
 }
-
 
 .active i {
   color: var(--primary-color);

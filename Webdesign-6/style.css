@@ -413,7 +413,7 @@ header {
 .features,
 .services,
 .team,
-.blog{
+.blog {
   padding: 6.43rem 0;
 }
 /* features section */
@@ -612,8 +612,8 @@ header {
 }
 
 /* team section */
-.team .row{
-    justify-content: space-around;
+.team .row {
+  justify-content: space-around;
 }
 .team-card {
   position: relative;
@@ -666,18 +666,31 @@ header {
 }
 
 /* blog section */
-.category-container{
-    display:flex;
-    flex-direction: row;
-    gap:8px
+.category-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
-.category{
-    background-color: var(--secondary-color) !important;
-    font-size:13px !important;
-    font-family: var(--heading-font) !important;
-    font-weight: 300 !important;
+.category {
+  background-color: var(--secondary-color) !important;
+  font-size: 13px !important;
+  font-family: var(--heading-font) !important;
+  font-weight: 300 !important;
+  border: 2px solid transparent !important;
+  padding: 4px 10px !important;
 }
-
+.btn-check:checked + .btn {
+  border: 2px solid var(--primary-color) !important;
+}
+.blog-img {
+  width: 380px;
+  height: 268px;
+  object-fit: cover;
+}
+.blog-img img{
+  width: 100%;
+  height: 100%;
+}
 
 /* responsive */
 @media (max-width: 715px) {
