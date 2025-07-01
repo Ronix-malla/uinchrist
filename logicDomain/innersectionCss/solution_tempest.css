@@ -15,7 +15,6 @@ section{
 
 .primary-btn:hover i {
   animation: fa-bounce 1s infinite;
-  
 }
 .implement-section-top {
   color: white;

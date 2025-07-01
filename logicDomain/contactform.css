@@ -1,15 +1,15 @@
 :root {
-    /* font  */
-    --primary-font: "Poppins", arial, sans-serif;
-    --secondary-font: "Shadows Into Light", cursive;
-  
-    /* font-color */
-  
-    /* color */
-    --primary-color: #0088cc;
-    --secondary-color: #a41e22;
-    --tertiary-color: #feca12;
-  }
+  /* font  */
+  --primary-font: "Poppins", arial, sans-serif;
+  --secondary-font: "Shadows Into Light", cursive;
+
+  /* font-color */
+
+  /* color */
+  --primary-color: #0088cc;
+  --secondary-color: #a41e22;
+  --tertiary-color: #feca12;
+}
 
 /* top section */
 .implement-section-top {
@@ -36,74 +36,131 @@
   background: rgba(0, 136, 204, 0.6);
   z-index: -1;
 }
-  /* form */
+/* form */
 .form-column {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;                         
-    background-color: #fff;
-    padding: 2rem !important;
-  }
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 2rem !important;
+}
 
-  .form-title{
-    font-size: 24px;
-    line-height: 42px;
-    font-weight: 600;
-    color: var(--primary-color);
-  }
-  .form-title-2{
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--primary-color);
-  }
-  .form-description{
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #777;
-  }
-  .form-label{
-    font-size: 14px !important;
-    color: #666666;
-  }
+.form-title {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.form-title-2 {
+  font-size: 20px;
+  font-weight: 600;
+  display: inline;
+  color: var(--primary-color);
+}
+.form-description {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #777;
+}
+.form-label {
+  font-size: 14px !important;
+  color: #666666;
+}
 
-  .btn-primary{
-    background-color: #F5F5F5 !important;
-    border: none !important;
-    color:black !important;
-  }
-  
-  .btn-primary {
-    background-color: #F5F5F5 !important;
-    border: none !important;
-    color: #666666 !important;
-    margin-left: 5px ;
-    border-bottom: 3px solid transparent !important;
-  }
-  
-  .btn-check:checked + .btn-primary {
-    border-bottom: 3px solid var(--tertiary-color) !important;
-  }
-  
-  .contact-title{
-    position: relative;
-    font-size: 14px;
-    color: #666666;
-    font-weight: 600;
-    line-height: 24px;
-    display: inline-block;
-  }
-  .contact-title::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: var(--tertiary-color);
-    bottom: -2px;
-    left: 0;
+.btn-primary {
+  background-color: #f5f5f5 !important;
+  border: none !important;
+  color: black !important;
+}
 
+.btn-primary {
+  background-color: #f5f5f5 !important;
+  border: none !important;
+  color: #666666 !important;
+  margin-left: 5px;
+  border-bottom: 3px solid transparent !important;
+}
+
+.btn-check:checked + .btn-primary {
+  border-bottom: 3px solid var(--tertiary-color) !important;
+}
+
+.contact-title {
+  position: relative;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 600;
+  line-height: 24px;
+  display: inline-block;
+}
+.contact-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--tertiary-color);
+  bottom: -2px;
+  left: 0;
+}
+.contact-detail {
+  font-size: 14px;
+  line-height: 24px;
+  color: #888;
+}
+
+/* background image */
+.abstract-img {
+  position: absolute;
+  transform: translateY(-79px);
+  left: -160px;
+  width: 16%;
+  height: auto;
+  opacity: 0.6;
+  animation: Bouncing 1.5s linear infinite alternate;
+}
+.arrow {
+  position: absolute;
+  right: -21px;
+  top: 53px;
+  width: 70px;
+  transform: rotate(19deg);
+  opacity: 0.5;
+}
+
+/* animation */
+@keyframes Bouncing {
+  100% {
+    top: 55px;
   }
-  .contact-detail{
-    font-size: 14px;
-    line-height: 24px;
-    color: #888;
+  0% {
+    top: 42px;
   }
+}
+
+@media (max-width: 992px) {
+  .arrow {
+    right: 14%;
+    top: 41px;
+  }
+}
+@media (max-width: 834px) {
+  .arrow {
+    transform: rotate(-4deg);
+    top:30px
+  }
+}
+@media (max-width: 766px) {
+  .arrow {
+    right: 35%
+  }
+}
+@media (max-width: 620px) {
+  .arrow {
+    right: 35%
+  }
+}
+@media (max-width: 570px) {
+  .arrow {
+    display:none;
+  }
+}
