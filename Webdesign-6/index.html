@@ -21,14 +21,16 @@
         <div class="container">
           <div class="row">
             <!-- Logo -->
-            <div class="col-2 col-lg-1 align-self-start align-self-lg-center">
+            <div
+              class="col-4 col-sm-4 col-md-6 col-lg-1 align-self-start align-self-lg-center"
+            >
               <a href="index.html" class="logo">Logo</a>
             </div>
 
             <!-- Navbar -->
-            <div class="col-8 col-lg-9 order-2 order-lg-1">
+            <div class="col-8 col-sm-8 col-md-6 col-lg-9 order-2 order-lg-1">
               <nav
-                class="navbar navbar-expand-lg justify-content-start align-items-center"
+                class="navbar navbar-expand-lg justify-content-end align-items-center"
               >
                 <!-- Hamburger Toggler -->
                 <button
@@ -80,7 +82,9 @@
             </div>
 
             <!-- Request Demo Button -->
-            <div class="col-2 col-lg-2 order-1 order-lg-3 align-self-center">
+            <div
+              class="col-2 col-lg-2 order-1 order-lg-3 align-self-center d-none d-lg-block"
+            >
               <div class="ms-auto">
                 <a href="#">
                   <div class="req-demo-btn">
@@ -97,7 +101,7 @@
       <div class="hero-description">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6 col-12 text-md-start text-center">
               <h1 class="hero-title">
                 Build your dream <span>Web</span> and
                 <span>Mobile</span> applications
@@ -117,7 +121,7 @@
       </div>
 
       <!-- email field -->
-      <div class="overflow-hidden">
+      <div class="overflow-hidden d-none d-md-block">
         <div class="input-container">
           <input
             type="email"
@@ -137,9 +141,11 @@
 
     <!-- about section -->
     <section class="about">
+      <img src="assets/backgroundUShape.png" alt="" class="background-1">
+      <img src="assets/backgroundUShape.png" alt="" class="background-2">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-md-6 order-md-1 order-2">
             <div class="top-title">
               <p>ABOUT US</p>
             </div>
@@ -161,16 +167,16 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6 order-md-2 order-1 mb-5">
             <div class="about-image">
               <img src="assets/about-1.jpg" alt="" />
-              <img src="assets/about-2.jpg" alt="" />
+              <img src="assets/about-2.jpg" alt="" class="d-none d-md-block" />
             </div>
-            <div class="background-grid-1">
+            <div class="background-grid-1 d-none d-lg-block">
               <img src="assets/grid.png" alt="" />
-              <img src="assets/grid.png" alt="" />
+              <img src="assets/grid.png" alt=""  />
             </div>
-            <div class="background-grid-2">
+            <div class="background-grid-2 d-none d-lg-block">
               <img src="assets/grid.png" alt="" />
               <img src="assets/grid.png" alt="" />
             </div>
@@ -181,6 +187,8 @@
 
     <!-- our features -->
     <section class="features">
+      <img src="assets/backgroundUShape.png" alt="" class="background-1">
+      <img src="assets/background-btm.png" alt="" class="background-2">
       <div class="container">
         <div class="top-title top-title-center">
           <p>FEATURES</p>
@@ -193,7 +201,7 @@
 
         <div class="row">
           <!-- card 1 -->
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <div class="feature-card d-flex">
               <div class="feature-number">1</div>
               <div class="feature-card-img">
@@ -217,7 +225,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <div class="feature-card d-flex">
               <div class="feature-number">2</div>
               <div class="feature-card-img">
@@ -240,7 +248,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <div class="feature-card d-flex">
               <div class="feature-number">3</div>
               <div class="feature-card-img">
@@ -263,7 +271,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <div class="feature-card d-flex">
               <div class="feature-number">4</div>
               <div class="feature-card-img">
@@ -300,7 +308,7 @@
     <section class="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-md-7 col-12 order-md-1 order-2">
             <div class="service-container">
               <div class="service-col-1">
                 <!-- card 1 -->
@@ -338,7 +346,7 @@
                 </div>
               </div>
 
-              <div class="service-col-2 mt-5">
+              <div class="service-col-2 mt-md-5 mt-0">
                 <!-- card 1 -->
                 <div class="service-card">
                   <div class="service-card-img">
@@ -376,7 +384,7 @@
             </div>
           </div>
 
-          <div class="col-lg-5 d-flex align-items-center">
+          <div class="col-md-5 col-12 d-flex align-items-center justify-content-end order-md-2 order-1 mb-md-0 mb-5">
             <div>
               <div class="top-title-right d-flex justify-content-end">
                 <p>OUR SERVICES</p>
@@ -494,7 +502,7 @@
 
         <div class="row">
           <!-- card 1 -->
-          <div class="col-md-3 col-5">
+          <div class="col-md-3 col-sm-5 mb-5 mb-md-0">
             <div class="team-card">
               <img src="assets/teamicon.png" class="bg" alt="" />
               <div class="team-img">
@@ -526,7 +534,7 @@
           </div>
 
           <!-- card 2 -->
-          <div class="col-md-3 col-5">
+          <div class="col-md-3 col-sm-5  mb-5 mb-md-0">
             <div class="team-card">
               <img src="assets/teamicon.png" class="bg" alt="" />
               <div class="team-img">
@@ -558,7 +566,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="col-md-3 col-5">
+          <div class="col-md-3 col-sm-5">
             <div class="team-card">
               <img src="assets/teamicon.png" class="bg" alt="" />
               <div class="team-img">
@@ -593,114 +601,272 @@
     </section>
 
     <!-- blog section -->
-    <section class="blog">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="top-title">
-              <p>BLOG</p>
-            </div>
-            <div class="description-container">
-              <h2>Design and Dev <span>Journal</span></h2>
-              <p class="mb-0">
-                Stay updated with the latest in UI trends, product design tips,
-                and digital innovation.
-              </p>
-              <p class="mt-0">
-                Explore expert tips, best practices, and trends in user
-                interface and experience design. From wireframes to
-                pixel-perfect layouts, this is where great design starts.
-              </p>
-            </div>
-
-            <div class="primary-btn">
-              <a href="#"
-                >VIEW ALL
-                <img src="assets/right-arrow.png" alt="" />
-              </a>
-            </div>
+    <section class="blog ps-lg-0 ps-3">
+      <div class="row">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <div class="top-title">
+            <p>BLOG</p>
           </div>
-          <div class="col-md-7">
-            <div class="category-container">
+          <div class="description-container">
+            <h2>Design and Dev <span>Journal</span></h2>
+            <p class="mb-0">
+              Stay updated with the latest in UI trends, product design tips,
+              and digital innovation.
+            </p>
+            <p class="mt-0">
+              Explore expert tips, best practices, and trends in user interface
+              and experience design. From wireframes to pixel-perfect layouts,
+              this is where great design starts.
+            </p>
+          </div>
+
+          <div class="primary-btn">
+            <a href="#"
+              >VIEW ALL
+              <img src="assets/right-arrow.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="category-container">
+            <div>
               <input
                 type="checkbox"
                 class="btn-check"
                 id="btn-check"
                 autocomplete="off"
               />
-              <label class="btn  mb-2 category" for="btn-check"
-                >Design</label
-              >
-
-              <input
-                type="checkbox"
-                class="btn-check"
-                id="btn-check2"
-                autocomplete="off"
-              />
-              <label class="btn  mb-2 category" for="btn-check2"
-                >UI/UX Design</label
-              >
-
-              <input
-                type="checkbox"
-                class="btn-check"
-                id="btn-check3"
-                autocomplete="off"
-              />
-              <label class="btn  mb-2 category" for="btn-check3"
-                >Case Studies</label
-              >
-
-              <input
-                type="checkbox"
-                class="btn-check"
-                id="btn-check4"
-                autocomplete="off"
-              />
-              <label class="btn  mb-2 category" for="btn-check4"
-                >Tech</label
-              >
-
-              <input
-                type="checkbox"
-                class="btn-check"
-                id="btn-check5"
-                autocomplete="off"
-              />
-              <label class="btn  mb-2 category" for="btn-check5"
-                >Trends</label
-              >
-
-              <input
-                type="checkbox"
-                class="btn-check"
-                id="btn-check6"
-                autocomplete="off"
-              />
-              <label class="btn  mb-2 category" for="btn-check6"
-                >Accessibility & Ethics</label
-              >
+              <label class="btn mb-2 category" for="btn-check">Design</label>
             </div>
 
-            <div class="blog-container">
-              <!-- first blog -->
-               <div class="blog-card">
-                <div class="blog-img">
-                  <img src="assets/blog.jpg" alt="">
-                </div>
-                <div class="blog-detail">
-                  <div class="blog-admin">
-                    <p>Adam Smith</p>
-                    <p>20 June 2025</p>
+            <div>
+              <input
+              type="checkbox"
+              class="btn-check"
+              id="btn-check2"
+              autocomplete="off"
+            />
+            <label class="btn mb-2 category" for="btn-check2"
+              >UI/UX Design</label
+            >
+            </div>
+
+            <div>
+              
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btn-check3"
+              autocomplete="off"
+            />
+            <label class="btn mb-2 category" for="btn-check3"
+              >Case Studies</label
+            >
+            </div>
+
+            <div>
+              <input
+              type="checkbox"
+              class="btn-check"
+              id="btn-check4"
+              autocomplete="off"
+            />
+            <label class="btn mb-2 category" for="btn-check4">Tech</label>
+            </div>
+
+            <div>
+              <input
+              type="checkbox"
+              class="btn-check"
+              id="btn-check5"
+              autocomplete="off"
+            />
+            <label class="btn mb-2 category" for="btn-check5">Trends</label>
+            </div>
+
+            <div>
+              <input
+              type="checkbox"
+              class="btn-check"
+              id="btn-check6"
+              autocomplete="off"
+            />
+            <label class="btn mb-2 category" for="btn-check6"
+              >Accessibility & Ethics</label
+            >
+            </div>
+
+          </div>
+          <div class="collections mt-3">
+            <div class="row blog-container">
+              <div class="col-md-6">
+                <!-- first blog -->
+                <div class="blog-card">
+                  <div class="blog-img">
+                    <img src="assets/blog.jpg" alt="" />
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog-user-detail">
+                      <p>
+                        <img src="assets/user-icon.png" alt="" />
+                        Adam Smith
+                      </p>
+                      <p>
+                        <img src="assets/calendar-icon.png" alt="" />
+                        20 June 2025
+                      </p>
+                    </div>
+                    <div class="blog-description">
+                      <h4>Creative Design</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Porro, quidem?......
+                      </p>
+                      <div class="link-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
-               </div>
+              </div>
+              <div class="col-md-6">
+                <!-- first blog -->
+                <div class="blog-card">
+                  <div class="blog-img">
+                    <img src="assets/blog.jpg" alt="" />
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog-user-detail">
+                      <p>
+                        <img src="assets/user-icon.png" alt="" />
+                        Adam Smith
+                      </p>
+                      <p>
+                        <img src="assets/calendar-icon.png" alt="" />
+                        20 June 2025
+                      </p>
+                    </div>
+                    <div class="blog-description">
+                      <h4>Creative Design</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Porro, quidem?......
+                      </p>
+                      <div class="link-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- first blog -->
+                <div class="blog-card">
+                  <div class="blog-img">
+                    <img src="assets/blog.jpg" alt="" />
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog-user-detail">
+                      <p>
+                        <img src="assets/user-icon.png" alt="" />
+                        Adam Smith
+                      </p>
+                      <p>
+                        <img src="assets/calendar-icon.png" alt="" />
+                        20 June 2025
+                      </p>
+                    </div>
+                    <div class="blog-description">
+                      <h4>Creative Design</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Porro, quidem?......
+                      </p>
+                      <div class="link-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- enquiry -->
+    <section class="enquiry">
+      <div class="container text-center text-white">
+        <p>We are here to answer your questions 24/7</p>
+        <h3>Need for IT solution services?</h3>
+        <button class="secondary-btn">Contact With Us</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-6 mb-2">
+            <h2 class="footer-title">Logo</h2>
+            <p class="footer-body">
+              Transforming ideas into successful projects
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-2">
+
+            <h2 class="footer-title">Services</h2>
+            <p class="footer-body">
+              <a href="">Web Development</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Mobile Apps</a>
+            </p>
+            <p class="footer-body">
+              <a href="">E-commerce</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Custom Software</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 mb-2">
+            <h2 class="footer-title">Company</h2>
+            <p class="footer-body">
+              <a href="">About Us</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Services</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Blog</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Contact Us</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 mb-2">
+            <h2 class="footer-title">Support</h2>
+            <p class="footer-body">
+              <a href="">Help Center</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Terms of Service</a>
+            </p>
+            <p class="footer-body">
+              <a href="">Privacy Policy</a>
+            </p>
+            <p class="footer-body">
+              <a href="">FAQ</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-right">
+        <p>© 2024 design. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

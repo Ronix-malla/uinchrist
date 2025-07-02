@@ -1874,7 +1874,7 @@ section .implementation-detail {
 }
 
 .tab.active .tab-underline {
-  transform: scaleY(1); /* Animate the growth downwards */
+  transform: scaleY(1);
 }
 
 .active i {
