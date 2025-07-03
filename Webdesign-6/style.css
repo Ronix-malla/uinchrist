@@ -20,6 +20,10 @@
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
+html,
+body {
+  overflow-x: hidden !important;
+}
 body {
   background-color: var(--body-color) !important;
   font-family: var(--body-font) !important;
@@ -29,6 +33,7 @@ a {
 }
 .container {
   position: relative;
+  z-index: 5;
   max-width: 1140px !important;
 }
 .secondary-btn {
@@ -444,7 +449,6 @@ header {
   right: 0;
   opacity: 0.3;
   z-index: 0;
-
 }
 .features .background-2 {
   position: absolute;
@@ -452,7 +456,6 @@ header {
   left: 0;
   opacity: 1;
   z-index: 0;
-
 }
 .section-title {
   margin-bottom: 54px;
@@ -515,8 +518,23 @@ header {
   display: flex;
   gap: 50px;
 }
+.services .background-1 {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: -53px;
+  z-index: -2;
+  opacity: 0.3;
+}
+.services .background-2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.4;
+}
+
 .service-card {
   padding: 16px 34px;
+  background-color: white;
   margin-bottom: 23px;
   box-shadow: 0 0px 22px -6px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
@@ -582,13 +600,63 @@ header {
 .service-col-2 {
   margin-top: 81px;
 }
+.service-information {
+  position: relative;
+}
+.service-information img {
+  position: absolute;
+  top: -90px;
+  left: 10px;
+  transform: rotate(-90deg);
+  opacity: 0.4;
+}
 
 /* achievements section */
 .achievement {
   padding: 77px 0;
   background-color: var(--primary-color);
   color: white;
+  position: relative;
 }
+.achievement img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: 1;
+}
+.circle-container {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+}
+.circle {
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 3;
+}
+.circle-container .circle:nth-child(2) {
+  transform: translateX(50%);
+}
+.blur-circle {
+  position: absolute;
+  top: 21%;
+  left: 65%;
+  height: 225px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  filter: blur(110px);
+  z-index: 2;
+  width: 225px !important;
+}
+
 .achievement .description-container p,
 .achievement .description-container h2,
 .achievement .description-container span {
@@ -648,6 +716,21 @@ header {
 /* team section */
 .team .row {
   justify-content: space-around;
+}
+.team .background-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: auto;
+}
+.team .background-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+  width: 13%;
+  height: auto;
 }
 .team-card {
   position: relative;
@@ -710,6 +793,23 @@ header {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
+}
+.blog .background-1 {
+  position: absolute;
+  top: 0;
+  right: -197px;
+  height: auto;
+  opacity: 0.3;
+  z-index: -1;
+}
+.blog .background-2 {
+  position: absolute;
+  left: -220px;
+  bottom: 0;
+  transform: rotate(-90deg);
+  width: 13%;
+  opacity: 0.3;
+  height: auto;
 }
 .blog .description-container h2 span {
   display: block;
@@ -793,6 +893,7 @@ header {
 
 /* enquiry section */
 .enquiry {
+  position: relative;
   padding: 120px 0;
   background-color: #8ba373;
 }
@@ -818,7 +919,8 @@ header {
 
 /* footer */
 footer .container {
-  padding: clamp(2rem, 4vw, 4.375rem) 0 clamp(1rem, 3vw, 2.5rem) 0;
+  padding-top: clamp(2rem, 4vw, 4.375rem);
+  padding-bottom: clamp(1rem, 3vw, 2.5rem);
 }
 footer {
   background-color: var(--primary-color);
@@ -865,6 +967,18 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 992px) {
+  .circle-container {
+    top: 20px;
+    left: 20px;
+  }
+  .team .background-1 {
+    width: 30%;
+  }
+  .team .background-2 {
+    display: none;
+  }
+}
 @media (max-width: 930px) {
   .hero-title {
     line-height: 45px;
@@ -879,6 +993,11 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+  .service-information img {
+    top: auto;
+    bottom: -21px;
+    transform: rotate(170deg);
   }
 }
 @media (max-width: 765px) {
@@ -904,4 +1023,59 @@ footer {
   .team .description-container p {
     width: 100%;
   }
+}
+
+/* animations */
+.hidden-1{
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(3px);
+  transform: translateY(50%);
+}
+.show-1{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden-2{
+  transform: scale(0.1);
+  opacity: 0;
+  transition: all 1.5s;
+}
+.show-2{
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* left right animation */
+.left-show{
+  transform: translateX(-100%);
+  transition: all 1s;
+
+}
+.show-3{
+  transform: translateX(0);
+}
+
+.right-show{
+  transform: translateX(100%);
+  transition: all 1s;
+
+}
+.show-4{
+  transform: translateX(0);
+}
+
+.delay1{
+  transition-delay: 100ms;
+}
+.delay2{
+  transition-delay: 300ms;
+}
+.delay3{
+  transition-delay: 500ms;
+}
+.delay4{
+  transition-delay: 700ms;
 }
