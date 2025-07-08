@@ -113,11 +113,12 @@ header img {
   width: 90px;
   z-index: 5;
 }
-.dove {
+.light {
   position: absolute;
-  right: -70px;
-  top: -40px;
+  right: -88px;
+  top: -70px;
   z-index: 10;
+  transform: rotate(45deg);
   opacity: 0.2;
 }
 .main-section h4 {
@@ -233,3 +234,4 @@ header img {
   color: var(--primary-color);
   background-color: #f3f3f3;
 }
+

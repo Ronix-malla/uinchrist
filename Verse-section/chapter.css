@@ -130,7 +130,7 @@ header img {
   padding: 0rem 1rem;
   font-size: 15px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   opacity: 0.7;
   transition: all 0.3s ease;
 }
@@ -273,6 +273,14 @@ header img {
 }
 
 /* main section */
+.open-book{
+  position: absolute;
+  top: 0;
+  right: -110px;
+  transform: rotate(30deg);
+  opacity: 0.2;
+  width: 14%;
+}
 .chap-info {
   position: relative;
   margin-bottom: 9px;
@@ -282,9 +290,10 @@ header img {
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
 }
+
 .chap-info h4 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
 }
 .chap-info .total-verses {
   margin: 5px 0;
