@@ -60,10 +60,11 @@ header img {
 }
 
 .chapter-section {
-  margin: 6rem 0;
+  padding: 6rem 0;
+  background-color: #FAF8F7;
 }
 .active-item {
-  font-weight: 900;
+  font-weight: bold;
   position: relative;
   margin-left: 1rem;
 }
@@ -275,6 +276,7 @@ header img {
 .chap-info {
   position: relative;
   margin-bottom: 9px;
+  background-color: white;
   padding: 1rem 1.56rem;
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
@@ -335,7 +337,7 @@ header img {
 .breadcrumb-navigation {
   margin: 1rem 0;
 }
-.breadcrumb-navigation a {
+.breadcrumb-navigation a{
   margin-left: 5px;
   font-size: 0.9rem;
   color: var(--tertiary-color);
@@ -343,8 +345,10 @@ header img {
   padding: 8px 10px;
   border-radius: 6px;
 }
-.breadcrumb-navigation .active {
-  font-weight: 600 !important;
-  color: black;
-  background-color: #f7f7f7;
+
+.breadcrumb-navigation .active{
+  font-weight: 500 !important;
+  color: var(--primary-color);
+  background-color: #f3f3f3;
+  
 }
