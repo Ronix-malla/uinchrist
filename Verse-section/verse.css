@@ -25,9 +25,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.container{
+  width: 1140px ;
 
-.container {
-  width: 1064px !important;
 }
 /* navbar */
 header {
@@ -52,10 +52,11 @@ header a {
 }
 
 header img {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   margin-left: 11px;
 }
+
 
 .active-item {
   font-weight: bold;
@@ -218,6 +219,8 @@ header img {
 
 /* breadcrumb-navigation */
 .breadcrumb-navigation {
+  display:flex;
+  flex-wrap: wrap;
   margin: 1rem 0;
 }
 .breadcrumb-navigation a {
@@ -235,3 +238,9 @@ header img {
   background-color: #f3f3f3;
 }
 
+@media (max-width: 580px){
+  .container{
+    width: auto;
+  }
+
+}

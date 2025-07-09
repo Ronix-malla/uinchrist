@@ -24,7 +24,7 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
   </head>
   <body>
     <!-- main section -->
-    <main class="chapter-section">
+    <section class="chapter-section">
       <div class="container">
         <div class="breadcrumb-navigation">
           <a href="#">Bible &#11208;</a>
@@ -39,13 +39,13 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
                 <li>
                   <a href="verse.html" class="hover-item">
                     Verse
-                    <img src="assets/verse.png" alt="Verse icon" />
+                    <img src="assets/verse-inactive.png" alt="Verse icon" />
                   </a>
                 </li>
                 <li>
                   <a href="#" class="active-item">
                     Chapter
-                    <img src="assets/chapter.png" alt="Chapter icon" />
+                    <img src="assets/chapter-active.png" alt="Chapter icon" />
                   </a>
                 </li>
               </ul>
@@ -84,9 +84,10 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
                         class="dropdown-item current-translation"
                         type="button"
                       >
+                      <i class="fa-solid fa-bookmark"></i>
                         <h6 class="translation-title">
                           New International Version
-                          <span class="translation-status ms-3">Current</span>
+                          <!-- <span class="translation-status ms-3">Current</span> -->
                         </h6>
 
                         <h6 class="title-shortform">NIV</h6>
@@ -222,12 +223,7 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
                                 Ezra
                               </button>
                             </li>
-                            <li>
-                              <button class="dropdown-item">
-                                <i class="ph ph-book ot-icon"></i>
-                                2 Nehemiah
-                              </button>
-                            </li>
+                            
                             <li>
                               <button class="dropdown-item current-testament">
                                 <i class="ph ph-book-open ot-icon"></i>Jeremiah
@@ -468,7 +464,7 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
     <script>
       // script for toogle functionality in book dropdown

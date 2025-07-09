@@ -24,8 +24,8 @@ a {
   --secondary-color: #f2f4f5;
   --tertiary-color: #3b5163;
 }
-.container {
-  width: 1064px !important;
+.container{
+  width: 1140px ;
 }
 ul {
   padding-left: 0;
@@ -54,8 +54,8 @@ header a {
 }
 
 header img {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   margin-left: 11px;
 }
 
@@ -68,6 +68,7 @@ header img {
   position: relative;
   margin-left: 1rem;
 }
+
 .active-item::after {
   content: "";
   position: absolute;
@@ -95,19 +96,31 @@ header img {
 }
 /* translation dropdown */
 .current-translation {
-  border: 2px solid var(--primary-color) !important;
-
+  border: 1.5px solid var(--primary-color) !important;
   border-radius: 6px;
   position: relative;
 }
-.translation-status {
+.current-translation i{
+  position: absolute;
+  right:9px;
+  top: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.current-translation:hover{
+  background-color: inherit !important;
+}
+.current-translation:hover .title-shortform{
+  background-color: var(--primary-color) !important;
+}
+/* .translation-status {
   position: static;
   padding: 6px 6px;
   font-size: 10px;
   color: white;
   background-color: var(--primary-color);
   border-radius: 20px;
-}
+} */
 .translation-title {
   font-family: var(--primary-font);
   font-size: 1rem;
@@ -118,9 +131,15 @@ header img {
 }
 .title-shortform {
   font-family: var(--primary-font);
+  border-radius: 6px;
   font-size: 0.9rem;
-  line-height: 24px;
-  color: var(--primary-color);
+  padding: 3px 6px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: white;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+
 }
 .btn-dropdown {
   background-color: transparent !important;
@@ -155,10 +174,10 @@ header img {
 .translation-dropdown .dropdown-item {
   background-color: #fff;
   border-radius: 10px;
-  padding: 12px 16px;
+  padding: 12px 54px 12px 16px;
   margin-bottom: 10px;
   border: none;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1) !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -167,7 +186,9 @@ header img {
 .translation-dropdown .dropdown-item:hover {
   background-color: #f1f1f1;
 }
-
+.translation-dropdown .dropdown-item:hover .title-shortform{
+  background-color: var(--tertiary-color);
+}
 .section-header {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -245,8 +266,8 @@ header img {
 .current-testament {
   background-color: transparent !important;
   color: var(--primary-color) !important;
-  font-weight: bold !important;
-  border: 2px solid var(--primary-color) !important;
+  font-weight: 500 !important;
+  border: 1.5px solid var(--primary-color) !important;
 }
 .current-verse {
   color: var(--primary-color) !important;
@@ -267,7 +288,7 @@ header img {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.3px;
-  border: 2px solid white;
+  border: 1.5px solid white;
   transition: all 0.4s ease;
 
   font-family: var(--secondary-font);
@@ -363,4 +384,12 @@ header img {
   font-weight: 500 !important;
   color: var(--primary-color);
   background-color: #f3f3f3;
+}
+
+
+@media (max-width: 580px){
+  .container{
+    width: 100%;
+  }
+
 }
