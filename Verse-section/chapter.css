@@ -61,7 +61,7 @@ header img {
 
 .chapter-section {
   padding: 6rem 0;
-  background-color: #FAF8F7;
+  background-color: #faf8f7;
 }
 .active-item {
   font-weight: bold;
@@ -173,7 +173,6 @@ header img {
   margin-bottom: 0.5rem;
   color: var(--primary-color);
   padding-left: 0.5rem;
-  border-left: 5px solid var(--primary-color);
 }
 .dropdown-menu-custom {
   display: flex;
@@ -186,10 +185,18 @@ header img {
 }
 
 .scroll-section {
+  display: relative;
   max-height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
+}
+.bible-icon{
+  position: absolute;
+  top: 50%;
+  color: var(--primary-color);
+  opacity: 0.2;
+  font-size: 50px ;
 
 }
 .scroll-section-2 {
@@ -205,28 +212,34 @@ header img {
 /* old and new testament */
 .old-testament .dropdown-item,
 .new-testament .dropdown-item {
-  background-color: #f7f6f6;
   border-bottom: 2px solid #cacaca;
   border-radius: 10px;
   padding: 10px 13px;
   color: #333;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.old-testament .dropdown-item {
+  background-color: #f7f6f6;
+}
+.new-testament .dropdown-item {
+  background-color: #f3f8fd;
 }
 .new-testament .dropdown-item {
   margin-left: 10px;
 }
-.old-testament .dropdown-item::before,
-.new-testament .dropdown-item::before {
-  content: "\f02d";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-style: normal;
-  display: inline-block;
-  margin-right: 8px;
+.old-testament .dropdown-item::before {
   color: var(--primary-color);
-  font-size: 14px;
-  position: relative;
-  top: 1px;
+}
+.new-testament .dropdown-item::before {
+  color: var(--tertiary-color);
+}
+.ot-icon {
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-right: 6px;
+}
+.new-testament .ot-icon {
+  color: var(--tertiary-color);
 }
 
 .current-testament {
@@ -239,18 +252,6 @@ header img {
   color: var(--primary-color) !important;
   font-weight: bold !important;
 }
-.current-testament::before {
-  content: "\f518" !important;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-style: normal;
-  display: inline-block;
-  margin-right: 8px;
-  color: var(--primary-color);
-  font-size: 14px;
-  position: relative;
-  top: 1px;
-}
 .current-testament:hover,
 .current-verse:hover {
   color: var(--primary-color);
@@ -258,14 +259,17 @@ header img {
   background-color: white;
 }
 .book-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: 20px;
   margin-bottom: 5px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.3px;
   border: 2px solid white;
   transition: all 0.4s ease;
+
   font-family: var(--secondary-font);
 }
 .book-dropdown .dropdown-item:hover {
@@ -273,7 +277,7 @@ header img {
 }
 
 /* main section */
-.open-book{
+.open-book {
   position: absolute;
   top: 0;
   right: -110px;
@@ -346,7 +350,7 @@ header img {
 .breadcrumb-navigation {
   margin: 1rem 0;
 }
-.breadcrumb-navigation a{
+.breadcrumb-navigation a {
   margin-left: 5px;
   font-size: 0.9rem;
   color: var(--tertiary-color);
@@ -355,9 +359,8 @@ header img {
   border-radius: 6px;
 }
 
-.breadcrumb-navigation .active{
+.breadcrumb-navigation .active {
   font-weight: 500 !important;
   color: var(--primary-color);
   background-color: #f3f3f3;
-  
 }
