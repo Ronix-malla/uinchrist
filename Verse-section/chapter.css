@@ -8,7 +8,7 @@
 html {
 }
 body {
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
 }
 a {
   text-decoration: none;
@@ -50,7 +50,7 @@ header a {
   text-decoration: none;
   color: inherit;
   font-family: var(--primary-font);
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
 }
 
 header img {
@@ -94,6 +94,23 @@ header img {
 .hover-item:hover::after {
   width: 100%;
 }
+/* scrollbar style */
+.translation-dropdown::-webkit-scrollbar-thumb,
+.scroll-section::-webkit-scrollbar-thumb,
+.scroll-section-2::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color);
+  border-radius: 6px;
+}
+.translation-dropdown::-webkit-scrollbar-track,
+.scroll-section::-webkit-scrollbar-track,
+.scroll-section-2::-webkit-scrollbar-track{
+  background: var(--secondary-color);
+}
+.translation-dropdown::-webkit-scrollbar,
+.scroll-section::-webkit-scrollbar,
+.scroll-section-2::-webkit-scrollbar{
+  width: 4px;
+}
 /* translation dropdown */
 .current-translation {
   border: 1.5px solid var(--primary-color) !important;
@@ -105,7 +122,7 @@ header img {
   right:9px;
   top: 0;
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 .current-translation:hover{
   background-color: inherit !important;
@@ -123,16 +140,16 @@ header img {
 } */
 .translation-title {
   font-family: var(--primary-font);
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 4px;
   color: #333;
 }
 .title-shortform {
   font-family: var(--primary-font);
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   padding: 3px 6px;
   margin-top: 6px;
   margin-bottom: 0;
@@ -147,7 +164,7 @@ header img {
   border: none;
   border-radius: 0.5rem;
   padding: 0rem 1rem;
-  font-size: 15px;
+  font-size: clamp(0.875rem, 1vw, 0.9375rem);
   cursor: pointer;
   font-weight: 500;
   opacity: 0.7;
@@ -256,7 +273,7 @@ header img {
 }
 .ot-icon {
   color: var(--primary-color);
-  font-size: 16px;
+  font-size: clamp(0.875rem, 1vw, 1rem);
   margin-right: 6px;
 }
 .new-testament .ot-icon {
@@ -285,7 +302,7 @@ header img {
   position: relative;
   padding-left: 20px;
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: clamp(0.875rem, 1vw, 0.9375rem);;
   font-weight: 400;
   letter-spacing: 0.3px;
   border: 1.5px solid white;
@@ -318,15 +335,15 @@ header img {
 
 .chap-info h4 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
 }
 .chap-info .total-verses {
   margin: 5px 0;
-  font-size: 13px;
+  font-size: clamp(0.6875rem, 1vw, 0.8125rem);
   color: #6d727a;
 }
 .chap-info .total-read {
-  font-size: 15px;
+  font-size: clamp(0.875rem, 1vw, 0.9375rem);;
   color: #353336;
 }
 .chap-info:hover {
@@ -373,7 +390,7 @@ header img {
 }
 .breadcrumb-navigation a {
   margin-left: 5px;
-  font-size: 0.9rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
   color: var(--tertiary-color);
   font-weight: 500;
   padding: 8px 10px;
@@ -392,4 +409,10 @@ header img {
     width: 100%;
   }
 
+}
+
+/* dummy */
+.size-6{
+  width: 16px;
+  margin-right: 4px;
 }

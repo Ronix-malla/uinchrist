@@ -18,7 +18,7 @@
 html {
 }
 body {
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
   font-family: var(--primary-font);
 }
 a {
@@ -47,7 +47,7 @@ header a {
   text-decoration: none;
   color: inherit;
   font-family: var(--primary-font);
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
 }
 
 header img {
@@ -114,21 +114,30 @@ header img {
 }
 .light {
   position: absolute;
-  right: -56px;
-  top: -47px;
+  right: 0;
+  top: -60px;
   z-index: 10;
-  width: 145px;
-  opacity: 0.2;
+  width: clamp(6.25rem, 5.125rem + 4.5vw, 9.063rem);
+  opacity: 0.13;
+  animation: bounceIn 2s infinite alternate;
+}
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 .main-section h4 {
-  font-size: 1.75rem;
+  font-size: clamp(1rem, 0.712rem + 1.15vw, 1.75rem);
   font-family: var(--secondary-font);
   font-weight: 600;
   line-height: 36px;
 }
 .main-section h4 .translation {
   color: #bc895b;
-  font-size: 1.625rem;
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 .main-section h4 .line {
   margin: 0 10px 0 10px;
@@ -136,7 +145,7 @@ header img {
 }
 
 .main-section p {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
   font-family: var(--primary-font);
   color: #4b4b4f;
   line-height: 32.4px;
@@ -148,7 +157,7 @@ header img {
   color: var(--primary-color) !important;
   text-decoration: underline;
   font-family: var(--secondary-font) !important;
-  font-size: 1.25rem !important;
+  font-size: clamp(0.9375rem, 1.6vw, 1.25rem) !important;
   font-weight: 600;
 }
 .btn-container {
@@ -160,7 +169,7 @@ header img {
   border-radius: 12px;
   padding: 11px 0;
   width: 100%;
-  font-size: 15px;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   font-weight: 600;
   color: #4a515a;
   transition: all 0.3s ease;
@@ -179,7 +188,6 @@ header img {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
-  height: 81.6px;
   color: white;
   border-right: 1px solid #d6d6d6;
   border-radius: 12px 0 0 12px;
@@ -201,12 +209,12 @@ header img {
   padding: 1rem 1.5rem;
 }
 .info p:nth-child(1) {
-  font-size: 12px;
+  font-size: clamp(0.625rem, 0.8vw, 0.75rem);
   color: #6d727a;
   margin-bottom: 8px;
 }
 .info p:nth-child(2) {
-  font-size: 15px;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   color: var(--tertiary-color);
   font-weight: bold;
 }
@@ -223,7 +231,7 @@ header img {
 }
 .breadcrumb-navigation a {
   margin-left: 5px;
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   color: var(--tertiary-color);
   font-weight: 500;
   padding: 8px 10px;
