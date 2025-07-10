@@ -311,7 +311,7 @@ header img {
   background-color: var(--primary-color);
   transition: all 0.3s ease;
 }
-.btn-dropdown {
+.dropdown-btn {
   background-color: transparent !important;
   color: #212529;
   border: none;
@@ -323,13 +323,11 @@ header img {
   opacity: 0.7;
   transition: all 0.3s ease;
 }
-.btn-dropdown:hover {
+.dropdown-btn:hover {
   color: black;
   opacity: 1;
 }
-.btn-secondary.dropdown-toggle.show {
-  color: #000 !important;
-}
+
 
 /* book dropdown style */
 .section-header {
