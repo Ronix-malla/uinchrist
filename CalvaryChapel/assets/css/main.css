@@ -454,8 +454,8 @@ h6 {
 .footer .footer-top {
   padding-top: 50px;
 }
-.footer-about{
-  display:flex;
+.footer-about {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -1672,7 +1672,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.students-life-block .content-wrapper .section-badge {
+ .section-badge {
   display: inline-block;
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
   color: var(--accent-color);
@@ -9574,7 +9574,7 @@ section,
   color: #ffffff;
   background: var(--accent-color);
 }
-.students-life .cta-section .btn-primary{
+.students-life .cta-section .btn-primary {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 14px 30px;
@@ -9584,7 +9584,81 @@ section,
   transition: all 0.3s ease;
   border: 2px solid var(--accent-color);
 }
-.students-life .cta-section .btn-primary:hover{
+.students-life .cta-section .btn-primary:hover {
   background: transparent;
   color: var(--accent-color);
+}
+
+/* classes inner */
+.inner-top {
+  position: relative;
+  background-color: var(--accent-color);
+}
+.inner-top .bg-1 {
+  position: absolute;
+  top: 0;
+  left: -90px;
+  transform: rotate(150deg);
+  width: 30%;
+  height: auto;
+  opacity: 0.5;
+  object-fit: cover;
+}
+.inner-top .bg-2 {
+  position: absolute;
+  top: 111px;
+  right: -90px;
+  transform: rotate(-17deg);
+  width: 40%;
+  height: auto;
+  opacity: 0.5;
+  object-fit: cover;
+}
+.inner-top p {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-weight: 200;
+  margin-top: 10px;
+}
+.inner-top p span {
+  color: var(--secondary-color);
+}
+
+/* class offered inner style */
+.class-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px rgba(0, 58, 102, 0.3);
+  padding: 36px 20px 20px 20px;
+  position: relative;
+  margin-bottom: 47px;
+  transition: box-shadow 0.3s ease ;
+}
+/* .class-card:hover {
+
+  box-shadow: 0px 1px 4px rgba(0, 58, 102, 0.1);
+} */
+.class-card .class-title {
+  position: absolute;
+  top: -17px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding: 10px 18px;
+}
+
+.class-card .class-title h5 {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+.class-content .class-inner-title {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-family: var(--heading-font);
+  padding-bottom: 9px;
+  border-bottom: 0.8px solid #d1cfcf;
+}
+.class-content .service-text p {
+  font-size: clamp(0.75rem, 1vw, 0.875rem) !important;
+  font-weight: 300 !important;
+  color: #6b7280 !important;
 }
